@@ -120,9 +120,19 @@ courses.simsab.net. Use `--shared-dir <path>` to point somewhere else.
 
 1. `npx wrangler pages project create simsab-resources` (production branch: `main`)
 2. `npm run deploy`
-3. In the Cloudflare dashboard, open the Pages project → Custom domains →
-   add `resources.simsab.net`. Since simsab.net is on Cloudflare, the CNAME is
-   created for you.
+3. Connect the domain. The DNS for simsab.net is managed at GoDaddy, so this
+   takes two steps, in this order:
+   1. In the Cloudflare dashboard, open the Pages project → Custom domains →
+      Set up a custom domain → `resources.simsab.net`. Cloudflare then shows
+      the CNAME record it expects. Do this first: a CNAME that points to
+      Pages before the domain is added in Pages returns an error page.
+   2. In GoDaddy, open DNS for simsab.net and add a record:
+      Type `CNAME`, Name `resources`, Value `simsab-resources.pages.dev`,
+      TTL default (1 hour).
+   Cloudflare checks the record and issues the certificate, usually within
+   a few minutes and at most a day. The status in Custom domains changes to
+   Active when it is done. The course site at courses.simsab.net is connected
+   the same way, so its CNAME record in GoDaddy is a useful reference.
 
 ## Access
 
