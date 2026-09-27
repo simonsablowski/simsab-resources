@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Team Design and Dependency Discovery — Resource Library</title>
+  <meta name="description" content="Conway&#x27;s Law as the foundational premise for team design. Principles for drawing good team boundaries: aligning to value streams, matching size to communication capacity, separating concerns by rate of change, and making ownership explicit. End-to-end, capability, and enabling team types and their trade-offs. How to surface dependencies between teams, read the patterns they reveal, and choose the right structural response.">
+  <meta name="robots" content="noindex">
+  <meta property="og:title" content="Team Design and Dependency Discovery">
+  <meta property="og:description" content="Conway&#x27;s Law as the foundational premise for team design. Principles for drawing good team boundaries: aligning to value streams, matching size to communication capacity, separating concerns by rate of change, and making ownership explicit. End-to-end, capability, and enabling team types and their trade-offs. How to surface dependencies between teams, read the patterns they reveal, and choose the right structural response.">
+  <meta property="og:type" content="article">
+  <meta name="resource:collection" content="coordination-collaboration-ai">
+  <meta name="resource:collection-title" content="Leading Coordination and Collaboration in AI-Accelerated Organisations">
+  <meta name="resource:number" content="06">
+  <meta name="resource:module" content="3">
+  <meta name="resource:module-title" content="Cross-Team Collaboration">
+  <meta name="resource:tags" content="Team design, Dependencies">
+  <meta name="resource:reading-time" content="10">
+  <link rel="preconnect" href="https://courses.simsab.net">
+  <link rel="stylesheet" href="https://courses.simsab.net/css/styles.css">
+  <link rel="stylesheet" href="/css/resources.css">
+</head>
+<body class="resource-page">
+
+  <div class="page-shell">
+
+    <!-- HERO -->
+    <header class="hero">
+      <div class="container">
+        <div class="hero-bar">
+          <nav aria-label="Breadcrumb">
+            <ol class="breadcrumb">
+              <li><a href="/">Resource library</a></li>
+              <li><a href="/coordination-collaboration-ai/">Leading Coordination and Collaboration</a></li>
+              <li>Cross-Team Collaboration</li>
+            </ol>
+          </nav>
+          <a class="btn btn-download" href="pdf/team-design-and-dependency-discovery.pdf" download>Download PDF</a>
+        </div>
+
+        <p class="eyebrow">Resource 06 · Cross-Team Collaboration</p>
+
+        <h1>Team Design and Dependency Discovery</h1>
+
+        <p class="lead">Conway's Law as the foundational premise for team design. Principles for drawing good team boundaries: aligning to value streams, matching size to communication capacity, separating concerns by rate of change, and making ownership explicit. End-to-end, capability, and enabling team types and their trade-offs. How to surface dependencies between teams, read the patterns they reveal, and choose the right structural response.</p>
+
+        <div class="badges">
+          <span class="badge">10 min read</span>
+          <span class="badge">Team design</span>
+          <span class="badge">Dependencies</span>
+        </div>
+      </div>
+    </header>
+
+    <div class="resource-layout">
+      <main class="main-content" id="content">
+
+        <section aria-labelledby="what-this-resource-is-for">
+          <div class="container prose">
+            <h2 id="what-this-resource-is-for">What this resource is for</h2>
+            <p>How an organisation structures its teams determines, more than almost anything else, how information flows, how decisions get made, and how work reaches delivery. Teams that are structured poorly generate coordination cost, communication overhead, and delivery bottlenecks that no amount of process improvement can fully resolve. In AI-accelerated environments, where the tempo of output has increased but organisational structures were often designed for a slower pace, the mismatch between team design and delivery demand is one of the most significant — and most fixable — sources of friction.</p>
+            <p>This resource covers two connected topics: how to think about team design as a deliberate act of organisational choice, and how to surface the dependencies between teams that reveal where the current structure is creating unnecessary cost.</p>
+          </div>
+        </section>
+        <section aria-labelledby="structure-shapes-communication-and-communication-shapes-the-product">
+          <div class="container prose">
+            <h2 id="structure-shapes-communication-and-communication-shapes-the-product" data-concept="Conway&#x27;s Law">Structure shapes communication and communication shapes the product</h2>
+            <p>The most important starting point for team design is Conway's Law, an observation made by computer scientist Melvin Conway in 1968: organisations tend to produce systems that mirror their own communication structures. If three teams are building a product together, the product will tend to develop three major components — not necessarily because that is the right architecture, but because each team builds what it can build independently and integrates at the points where it must communicate with others.</p>
+            <p>Conway's Law is not a technical observation — it is an organisational one, and it applies far beyond software. The implication is significant in both directions. If you want to change how a system or product is structured, you often need to change how the teams building it are organised. And if you reorganise teams without thinking about the work they are trying to coordinate, the new structure will shape the work in ways you did not intend.</p>
+            <p>The practical lesson is that team design is not primarily an HR or resource question — it is a product and delivery question. The boundaries you draw around teams determine what those teams can do independently and what they will need to negotiate with others. Drawing those boundaries well is one of the highest-leverage interventions available to a leader in a complex organisation.</p>
+          </div>
+        </section>
+        <section aria-labelledby="what-makes-a-team-boundary-good-or-bad">
+          <div class="container prose">
+            <h2 id="what-makes-a-team-boundary-good-or-bad" data-concept="Team boundaries">What makes a team boundary good or bad</h2>
+            <p>A team boundary is the line that defines what a team owns and is accountable for. Good team boundaries share a few properties.</p>
+            <p>A good boundary encloses a coherent domain of work. The things inside the boundary belong together — they change together, they are understood together, and they are best decided on together. When a boundary cuts across a naturally coherent domain, the two teams on either side will need to coordinate constantly on things that should be internal decisions. This coordination is not free — it consumes time, introduces latency, and creates opportunities for misalignment.</p>
+            <p>A good boundary minimises mandatory coordination. Every time one team needs something from another team in order to proceed, a dependency exists. Dependencies are not inherently bad, but every dependency is a potential bottleneck. A team that can complete most of its important work without waiting for other teams will deliver faster and more predictably than one that is constantly blocked on others. The goal of boundary design is to make the most frequent and most critical work as independent as possible, pushing coordination needs toward the edges.</p>
+            <p>A good boundary comes with clear ownership. The team on the inside of the boundary is accountable for what happens there. They make the decisions, they bear the consequences, and they do not need to seek approval from outside for routine choices within their domain. Boundary ambiguity — areas where two teams both believe, or neither believes, they are responsible — is <a href="/coordination-collaboration-ai/understanding-conflict#ownership-ambiguity">one of the most common sources of both conflict and delivery failure</a>.</p>
+          </div>
+        </section>
+        <section aria-labelledby="principles-for-designing-team-structures">
+          <div class="container prose">
+            <h2 id="principles-for-designing-team-structures">Principles for designing team structures</h2>
+            <p>Several principles from organisational design research are durable and well-supported, regardless of the specific framework you apply them through.</p>
+            <p id="align-teams-to-value-streams-not-functions" class="term"><strong>Align teams to value streams, not functions.</strong> <a href="/coordination-collaboration-ai/decision-latency-and-flow-diagnosis#value-stream-mapping-as-a-diagnostic-lens">A value stream is the sequence of activities</a> required to deliver something of value to a user or customer. When teams are aligned to value streams — owning an end-to-end capability — they can make decisions and deliver independently. When teams are aligned to functions — one team for design, one for engineering, one for testing — every feature requires multiple teams to coordinate, and the organisational structure itself becomes a bottleneck. Functional structures are good at building deep expertise; they are poor at delivering integrated value quickly.</p>
+            <p id="match-team-size-to-communication-capacity" class="term"><strong>Match team size to communication capacity.</strong> There is a well-established relationship between team size and communication overhead. As team size grows, the number of communication channels grows faster — a team of five has ten possible communication pairs; a team of ten has forty-five. This is not just a theoretical concern: empirically, small teams communicate more effectively, make faster decisions, and maintain shared context more reliably than large ones. The commonly cited range of five to nine people for a working team is grounded in this reality, not arbitrary convention.</p>
+            <p id="separate-concerns-at-different-rates-of-change" class="term"><strong>Separate concerns at different rates of change.</strong> Some parts of a system or product change frequently; others change rarely. When fast-changing and slow-changing concerns are owned by the same team, the team's rhythm is determined by the fastest-changing element — which may not be appropriate for everything it owns. Separating concerns by rate of change allows each team to operate at a pace that matches its domain.</p>
+            <p id="make-ownership-explicit-and-complete" class="term"><strong>Make ownership explicit and complete.</strong> Every significant capability, system component, or customer-facing outcome should have a clear owning team. Gaps in ownership — things that everyone assumes someone else is responsible for — reliably produce delivery failures and escalating conflicts.</p>
+            <p>A complete ownership map, even a rough one, is more valuable than a sophisticated organisational chart that leaves accountability implicit.</p>
+          </div>
+        </section>
+        <section aria-labelledby="team-types-and-their-trade-offs">
+          <div class="container prose">
+            <h2 id="team-types-and-their-trade-offs" data-concept="Team types">Team types and their trade-offs</h2>
+            <p>While no single framework has a monopoly on how to categorise teams, a few recurring distinctions are worth understanding because they reflect real structural trade-offs.</p>
+            <p id="end-to-end-teams" class="term"><strong>End-to-end teams</strong> own a complete user journey or customer capability from interface to infrastructure. They are responsible for outcomes, not just outputs — for whether the user can successfully do something, not just for whether a component was built. End-to-end ownership maximises accountability and minimises handoffs, but it requires breadth of skill within the team and can create tension when a technical component is shared across multiple journeys.</p>
+            <p id="capability-or-platform-teams" class="term"><strong>Capability or platform teams</strong> provide shared services or infrastructure that other teams consume. Rather than building every team's own solution to a common problem, a capability team builds it once and makes it available. This pattern is efficient when the shared capability is genuinely common and stable — but it creates a dependency for every team that relies on it. A slow, unreliable, or unresponsive capability team becomes a bottleneck for everyone downstream.</p>
+            <p id="enabling-or-coaching-teams" class="term"><strong>Enabling or coaching teams</strong> are temporary structures whose purpose is to build capability in other teams — not to do work on their behalf. An enabling team works alongside other teams for a defined period, transfers knowledge and practice, and then moves on. The measure of their success is whether the teams they worked with no longer need them.</p>
+            <p>The most important question when choosing a team type is not which pattern is theoretically best but which best minimises the coordination cost for the most important work in your specific context. There is no universally correct answer, and the right structure for a fifty-person organisation is almost certainly wrong for a five-hundred-person one.</p>
+          </div>
+        </section>
+        <section aria-labelledby="dependency-discovery">
+          <div class="container prose">
+            <h2 id="dependency-discovery" data-concept="Dependency discovery">Dependency discovery</h2>
+            <p>Dependencies between teams are one of the most significant and most underexamined sources of delivery slowdown. A dependency exists whenever one team cannot complete meaningful work without something from another team. Dependencies are not inherently bad — in any organisation where teams specialise, some dependencies are inevitable. But unexamined dependencies create invisible bottlenecks, unpredictable delivery timelines, and recurring friction between teams that each believe the other is the problem.</p>
+            <p>Dependency discovery is the practice of making these dependencies visible before they become crises. It is most valuable at the start of a delivery cycle or planning period, when there is still time to act on what is found.</p>
+            <p id="what-to-look-for" class="term" data-concept="Dependency categories"><strong>What to look for.</strong> Dependencies fall into a few recurring categories. Technical dependencies arise when one team's system or output is an input to another team's work. Knowledge dependencies arise when one team needs expertise or context that lives in another team. Approval dependencies arise when one team requires sign-off from another team or function before proceeding. Resource dependencies arise when teams share access to people, infrastructure, or tooling that is finite.</p>
+            <p id="how-to-surface-them" class="term"><strong>How to surface them.</strong> The most reliable method is a structured conversation, not a survey. Bring team representatives together and ask, for each significant piece of planned work: what do we need from other teams that we cannot provide ourselves? What other teams need something from us that would block them if we were delayed? These questions surface both outgoing and incoming dependencies — both matter.</p>
+            <p>For each dependency identified, note: which teams are involved; what specifically is needed; how frequently this dependency arises; how critical it is (does it block delivery, or just slow it?); and whether there is currently a clear protocol for managing it.</p>
+            <p id="reading-the-map" class="term"><strong>Reading the map</strong>. Once dependencies are visible, patterns become apparent. Concentration is the most important pattern to look for: if one team or component appears as a dependency for many other teams, it is a structural bottleneck. Any delay, instability, or capacity constraint in that team propagates across everyone who depends on it. Circular dependencies — where Team A needs something from Team B, and Team B needs something back from Team A — are a second critical pattern. Circular dependencies can create mutual blockages that neither team can resolve independently.</p>
+            <p id="acting-on-what-you-find" class="term" data-concept="Loosen, formalise or eliminate a dependency"><strong>Acting on what you find.</strong> There are three structural responses to a problematic dependency. You can loosen it by <a href="/coordination-collaboration-ai/competency-and-skills-analysis#skills-mapping-as-input-to-dependency-management">building the needed capability into the dependent team</a>, so they no longer need to wait. You can formalise it by putting a clear interface, agreement, or service commitment in place — converting an ad-hoc coordination need into a predictable relationship. Or you can eliminate it by redesigning team ownership so that the things that need to go together are owned by the same team. The right response depends on the nature of the dependency, the frequency and criticality of the need, and what is feasible given the current structure and skills.</p>
+          </div>
+        </section>
+        <section aria-labelledby="the-connection-to-coordination-patterns">
+          <div class="container prose">
+            <h2 id="the-connection-to-coordination-patterns">The connection to coordination patterns</h2>
+            <p>Dependency discovery is not an end in itself — it is the input to coordination design. Once you know what your dependencies are, the question becomes: what is the right mechanism for managing each one? That question is covered in <a href="/coordination-collaboration-ai/coordination-patterns-and-flight-levels">Resource 08 — Coordination Patterns and Flight Levels</a>, which maps specific coordination approaches to specific dependency types and organisational contexts.</p>
+          </div>
+        </section>
+        <section aria-labelledby="further-reading">
+          <div class="container prose">
+            <h2 id="further-reading">Further reading</h2>
+            <ul class="reading-list">
+              <li>Conway, M. — "How Do Committees Invent?" (Datamation, 1968) — the original statement of Conway's Law, brief and still worth reading</li>
+              <li>Galbraith, J.R. — Designing Organizations: Strategy, Structure, and Process at the Business Unit and Enterprise Levels — the foundational organisational design reference for information processing and coordination</li>
+              <li>Hackman, J.R. — Leading Teams: Setting the Stage for Great Performances — covers team boundaries, authority, and the structural conditions that determine team effectiveness</li>
+              <li>Reinertsen, D. — The Principles of Product Development Flow — applies queuing theory and systems thinking to dependency cost and coordination overhead in knowledge work</li>
+              <li>Forsgren, N., Humble, J., &amp; Kim, G. — Accelerate: The Science of Lean Software and DevOps — empirical evidence for which organisational and structural conditions predict delivery performance</li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- RELATED RESOURCES -->
+        <section class="related" aria-labelledby="related-resources">
+          <div class="container">
+            <p class="eyebrow">Keep reading</p>
+            <h2 id="related-resources">Related resources</h2>
+            <div class="related-list">
+              <a class="card" href="/coordination-collaboration-ai/competency-and-skills-analysis">
+                <span class="card-kicker">Resource 07 · Cross-Team Collaboration</span>
+                <h3>Competency and Skills Analysis</h3>
+                <p>Skills gaps explain many dependencies between teams.</p>
+              </a>
+              <a class="card" href="/coordination-collaboration-ai/coordination-patterns-and-flight-levels">
+                <span class="card-kicker">Resource 08 · Cross-Team Collaboration</span>
+                <h3>Coordination Patterns and Flight Levels</h3>
+                <p>Choose a coordination pattern for each dependency you find.</p>
+              </a>
+              <a class="card" href="/coordination-collaboration-ai/decision-latency-and-flow-diagnosis">
+                <span class="card-kicker">Resource 03 · Decision-Making and Alignment</span>
+                <h3>Decision Latency and Flow Diagnosis</h3>
+                <p>Value streams and the cost of waiting between teams.</p>
+              </a>
+            </div>
+          </div>
+        </section>
+
+        <!-- PREVIOUS / NEXT -->
+        <section class="pager-section" aria-label="Previous and next resource">
+          <nav class="container pager">
+            <a class="prev" href="facilitating-convergence"><span class="card-kicker">Previous · Resource 05</span>Facilitating Convergence</a>
+            <a class="next" href="competency-and-skills-analysis"><span class="card-kicker">Next · Resource 07</span>Competency and Skills Analysis</a>
+          </nav>
+        </section>
+
+      </main>
+
+      <aside class="toc-col" aria-label="On this page">
+        <details class="toc" open>
+          <summary>On this page</summary>
+          <nav>
+            <ol>
+              <li><a href="#what-this-resource-is-for">What this resource is for</a></li>
+              <li><a href="#structure-shapes-communication-and-communication-shapes-the-product">Structure shapes communication and communication shapes the product</a></li>
+              <li><a href="#what-makes-a-team-boundary-good-or-bad">What makes a team boundary good or bad</a></li>
+              <li><a href="#principles-for-designing-team-structures">Principles for designing team structures</a></li>
+              <li><a href="#team-types-and-their-trade-offs">Team types and their trade-offs</a></li>
+              <li><a href="#dependency-discovery">Dependency discovery</a></li>
+              <li><a href="#the-connection-to-coordination-patterns">The connection to coordination patterns</a></li>
+              <li><a href="#further-reading">Further reading</a></li>
+            </ol>
+          </nav>
+          <div class="toc-actions">
+            <p><a href="pdf/team-design-and-dependency-discovery.pdf" download>Download as PDF</a></p>
+            <p><a href="/coordination-collaboration-ai/">All resources for this course</a></p>
+            <p><a href="/">Search the library</a></p>
+          </div>
+        </details>
+      </aside>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+      <div class="container">
+        <p>
+          © Simon Sablowski &amp; Giuseppe De Simone
+          <a href="https://courses.simsab.net/legal-notice">Legal notice (Impressum)</a>
+          <a href="https://courses.simsab.net/privacy-policy">Privacy policy (Datenschutzerklärung)</a>
+        </p>
+      </div>
+    </footer>
+  </div>
+
+  <script src="/js/resource.js" defer></script>
+</body>
+</html>

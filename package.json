@@ -1,0 +1,16 @@
+{
+  "name": "simsab-resources",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "check": "node scripts/build.mjs --check",
+    "pdf": "node scripts/pdf.mjs",
+    "dev": "npm run build && wrangler pages dev public",
+    "deploy": "npm run build && npm run pdf && wrangler pages deploy public --project-name=simsab-resources"
+  },
+  "devDependencies": {
+    "playwright": "^1.56.0",
+    "wrangler": "^3"
+  }
+}

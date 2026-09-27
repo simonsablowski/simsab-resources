@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Coordination Patterns and Flight Levels — Resource Library</title>
+  <meta name="description" content="The main coordination patterns for cross-team work: shared backlogs, team API agreements, cross-team synchronisation forums, embedded roles, joint planning, and community of practice. The Flight Levels model: Level 1 (team), Level 2 (cross-team flow), Level 3 (portfolio strategy), and the altitude mismatch failure modes.">
+  <meta name="robots" content="noindex">
+  <meta property="og:title" content="Coordination Patterns and Flight Levels">
+  <meta property="og:description" content="The main coordination patterns for cross-team work: shared backlogs, team API agreements, cross-team synchronisation forums, embedded roles, joint planning, and community of practice. The Flight Levels model: Level 1 (team), Level 2 (cross-team flow), Level 3 (portfolio strategy), and the altitude mismatch failure modes.">
+  <meta property="og:type" content="article">
+  <meta name="resource:collection" content="coordination-collaboration-ai">
+  <meta name="resource:collection-title" content="Leading Coordination and Collaboration in AI-Accelerated Organisations">
+  <meta name="resource:number" content="08">
+  <meta name="resource:module" content="3">
+  <meta name="resource:module-title" content="Cross-Team Collaboration">
+  <meta name="resource:tags" content="Coordination, Dependencies, Flow">
+  <meta name="resource:reading-time" content="8">
+  <link rel="preconnect" href="https://courses.simsab.net">
+  <link rel="stylesheet" href="https://courses.simsab.net/css/styles.css">
+  <link rel="stylesheet" href="/css/resources.css">
+</head>
+<body class="resource-page">
+
+  <div class="page-shell">
+
+    <!-- HERO -->
+    <header class="hero">
+      <div class="container">
+        <div class="hero-bar">
+          <nav aria-label="Breadcrumb">
+            <ol class="breadcrumb">
+              <li><a href="/">Resource library</a></li>
+              <li><a href="/coordination-collaboration-ai/">Leading Coordination and Collaboration</a></li>
+              <li>Cross-Team Collaboration</li>
+            </ol>
+          </nav>
+          <a class="btn btn-download" href="pdf/coordination-patterns-and-flight-levels.pdf" download>Download PDF</a>
+        </div>
+
+        <p class="eyebrow">Resource 08 · Cross-Team Collaboration</p>
+
+        <h1>Coordination Patterns and Flight Levels</h1>
+
+        <p class="lead">The main coordination patterns for cross-team work: shared backlogs, team API agreements, cross-team synchronisation forums, embedded roles, joint planning, and community of practice. The Flight Levels model: Level 1 (team), Level 2 (cross-team flow), Level 3 (portfolio strategy), and the altitude mismatch failure modes.</p>
+
+        <div class="badges">
+          <span class="badge">8 min read</span>
+          <span class="badge">Coordination</span>
+          <span class="badge">Dependencies</span>
+          <span class="badge">Flow</span>
+        </div>
+      </div>
+    </header>
+
+    <div class="resource-layout">
+      <main class="main-content" id="content">
+
+        <section aria-labelledby="what-this-resource-is-for">
+          <div class="container prose">
+            <h2 id="what-this-resource-is-for">What this resource is for</h2>
+            <p>AI-accelerated delivery does not eliminate the need for cross-team coordination — it increases it. When individual teams move faster, the dependencies between them become more frequent and more consequential. Coordination mechanisms that were adequate at a lower tempo start to break down: handoffs that used to happen weekly now need to happen daily, and ad-hoc agreements that worked when everything moved slowly become sources of bottleneck and misalignment. Choosing the right coordination pattern for each dependency — and operating at the right level of organisational altitude — is one of the highest-leverage interventions available to engineering leaders in this environment.</p>
+            <p><a href="/coordination-collaboration-ai/team-design-and-dependency-discovery">Once you have a clear picture of your team structure and dependencies</a>, the next question is how teams coordinate — what mechanisms, meetings, agreements, and forums govern the flow of work across team boundaries. Not all coordination mechanisms are appropriate for all situations. Using the wrong pattern creates either too much coordination overhead (slowing everyone down) or too little (allowing misalignment to propagate until it becomes a crisis). This resource covers the main coordination patterns available for cross-team work, and the Flight Levels model — a framework for thinking about coordination at different organisational altitudes.</p>
+          </div>
+        </section>
+        <section aria-labelledby="what-coordination-patterns-are-for">
+          <div class="container prose">
+            <h2 id="what-coordination-patterns-are-for">What coordination patterns are for</h2>
+            <p>A coordination pattern is a repeatable structure for managing the flow of work and information across team boundaries. Patterns exist because coordination problems tend to recur in similar forms, and solving them from scratch each time is inefficient. A well-chosen pattern gives a team a starting point — a structure that has been tested in similar contexts — which they can adapt to their specific situation.</p>
+            <p>The most important variable in choosing a coordination pattern is the nature of the dependency being coordinated. Dependencies that are predictable, well-defined, and relatively stable are best managed with formal, lightweight mechanisms — service agreements, shared cadences, documented interfaces. Dependencies that are uncertain, novel, or rapidly changing require more bandwidth — direct collaboration, embedded roles, or joint ownership. Using a formal, low-bandwidth mechanism for a high-uncertainty dependency leads to misalignment and surprises. Using a high-bandwidth collaboration mode for a stable, well-understood dependency is simply waste.</p>
+          </div>
+        </section>
+        <section aria-labelledby="common-coordination-patterns">
+          <div class="container prose">
+            <h2 id="common-coordination-patterns" data-concept="Coordination patterns">Common coordination patterns</h2>
+            <p id="shared-backlogs" class="term"><strong>Shared backlogs</strong> are used when two teams need to coordinate the sequencing and prioritisation of interdependent work. Items from both teams that have dependencies on each other are visible in a shared view, allowing teams to plan together without merging into a single team. This pattern is lightweight but requires discipline — the shared backlog needs to be maintained actively, and teams need to honour their commitments to each other's sequencing.</p>
+            <p id="team-api-interface-agreements" class="term" data-concept="Team API"><strong>Team API / interface agreements</strong> are explicit contracts between teams that define what one team provides to another, under what conditions, on what timeline, and through what communication channel. The term "team API" is borrowed from software engineering — just as a software API defines a stable interface through which systems communicate, a team API defines a stable interface through which teams interact. A team API might specify: what requests the team accepts, in what format, with what expected response time; what the team's current priorities are; how to escalate if the standard process is not working; and what the team is not responsible for. Interface agreements dramatically reduce the ad-hoc negotiation that teams without them spend enormous amounts of time on.</p>
+            <p id="cross-team-synchronisation-forums" class="term"><strong>Cross-team synchronisation forums</strong> are regular meetings that bring representatives from multiple teams together to surface dependencies, identify blockers, and coordinate on upcoming work. The most common form in agile organisations is the "Scrum of Scrums" — a brief weekly meeting between team leads or representatives. The risk with cross-team forums is that they become reporting sessions rather than coordination sessions, consuming time without producing useful decisions. A well-run cross-team forum is action-oriented: it surfaces what needs to happen, who will do it, and by when.</p>
+            <p id="embedded-roles" class="term"><strong>Embedded roles</strong> are individuals who work across team boundaries — either permanently assigned to span two teams, or temporarily embedded in a team that needs specialised capability. Embedding is a high-bandwidth pattern — it puts direct communication in the same physical or virtual space as the work. It is appropriate when a dependency is intensive, urgent, or involves knowledge that is difficult to transfer through documentation alone. The risk is that embedded roles create invisible dependencies — when the embedded person moves on, the coordination breaks down.</p>
+            <p id="joint-planning-sessions" class="term"><strong>Joint planning sessions</strong> bring teams together at a planning boundary (beginning of a quarter, PI planning, etc.) to align on their interdependencies before work begins. This is a proactive pattern — it addresses dependencies at design time rather than discovering them at execution time. The investment in joint planning is typically recovered many times over in reduced mid-cycle surprises.</p>
+            <p id="community-of-practice" class="term"><strong>Community of practice</strong> is a voluntary forum for people across team boundaries who share a discipline — engineering, design, data science — to share knowledge, develop standards, and build relationships that make cross-team coordination easier. Communities of practice do not coordinate specific work items; they build the shared language and relationships that make coordination easier when it is needed.</p>
+          </div>
+        </section>
+        <section aria-labelledby="flight-levels">
+          <div class="container prose">
+            <h2 id="flight-levels" data-concept="Flight Levels">Flight Levels</h2>
+            <p>The Flight Levels model, developed by Klaus Leopold, provides a framework for thinking about where in an organisation coordination should happen — and what kind of coordination is appropriate at each level. It borrows the aviation metaphor of altitude: different altitudes give you different views, and effective coordination requires being at the right altitude for the question you are trying to answer.</p>
+            <figure>
+              <img src="img/flight-levels.webp" alt="The three Flight Levels as boards. Level 3, Strategy: a portfolio board with the columns Qualify, Prepare, Realize and Monitor. Level 2, Coordination: a board with value streams as rows and Design, Implement, Deliver and Support as columns. Level 1, Operational: separate boards for Team A, Team B and Team C." width="1200" height="981" loading="lazy">
+            </figure>
+            <p id="flight-level-1" class="term"><strong>Flight Level 1</strong> is the level of individual teams — the altitude of day-to-day work. At this level, you can see individual tasks, stories, and work items. The coordination happening here is within-team: who is doing what, what is blocked, what is ready to be worked on. Kanban boards, daily standups, and sprint planning operate at Flight Level 1. The field of vision is wide in detail and narrow in scope.</p>
+            <p id="flight-level-2" class="term"><strong>Flight Level 2</strong> is the level of cross-team coordination — the altitude at which dependencies between teams become visible. At this level, you can see how work flows across team boundaries: where it gets stuck, where it accelerates, where team interfaces are creating overhead. The coordination happening at Flight Level 2 is between teams, not within them. A Flight Level 2 board shows the progress of capabilities or initiatives that span multiple teams, making the dependencies and blockers visible in one view. This is the level at which most of the coordination work in the Cross-Team Collaboration module operates.</p>
+            <p id="flight-level-3" class="term"><strong>Flight Level 3</strong> is the level of organisational strategy — the altitude at which portfolio-level decisions are made. At this level, you can see which initiatives the organisation is investing in, how those investments are distributed across strategic priorities, and whether the portfolio of work is aligned with organisational goals. The coordination happening at Flight Level 3 is about capacity allocation, strategic sequencing, and trade-off decisions between major initiatives.</p>
+          </div>
+        </section>
+        <section aria-labelledby="the-critical-insight-altitude-mismatch">
+          <div class="container prose">
+            <h2 id="the-critical-insight-altitude-mismatch" data-concept="Altitude mismatch">The critical insight: altitude mismatch</h2>
+            <p>The most common misuse of coordination mechanisms is altitude mismatch — operating at the wrong level for the question being asked. This manifests in two directions.</p>
+            <p id="too-low" class="term"><strong>Too low</strong> is when coordination meetings that should be operating at Flight Level 2 (cross-team flow) get pulled down to Flight Level 1 (individual task-level detail). The meeting fills with status reporting and task-level conversation, and the cross-team dependencies that need to be surfaced and resolved never come up. Leaders who are primarily interested in the detail of individual work items tend to drive meetings to Flight Level 1, even when the coordination problem lives at Level 2 or 3.</p>
+            <p id="too-high" class="term"><strong>Too high</strong> is when Flight Level 3 thinking — strategic portfolio allocation — is applied to questions that live at Flight Level 2 or 1. This produces abstract strategic discussions disconnected from the day-to-day coordination reality, and action items that are too broad to drive specific change.</p>
+            <p>A practical rule: if you are discussing individual tasks, work items, or stories, you are at Flight Level 1. If you are discussing how work flows across team boundaries, you are at Flight Level 2. If you are discussing strategic priorities and resource allocation, you are at Flight Level 3. Knowing which level a conversation should be at — and having the discipline to stay there — dramatically improves the quality of coordination.</p>
+          </div>
+        </section>
+        <section aria-labelledby="selecting-coordination-patterns-for-your-context">
+          <div class="container prose">
+            <h2 id="selecting-coordination-patterns-for-your-context">Selecting coordination patterns for your context</h2>
+            <p>Choosing coordination patterns is not a one-size-fits-all exercise. The right pattern depends on the nature of the dependencies, the maturity of the teams involved, the pace of change in the work, and the organisation's current coordination capabilities.</p>
+            <p>As a starting point, use team API agreements for stable, well-understood dependencies — they are low-overhead once established. Use cross-team synchronisation forums for dependencies that require ongoing coordination but do not need daily contact. Use embedded roles or joint planning for dependencies that are novel, high-risk, or rapidly evolving. Use community of practice to build the shared language and relationships that make all other coordination mechanisms work better.</p>
+            <p><a href="/coordination-collaboration-ai/team-design-and-dependency-discovery#dependency-discovery">The dependency map you build in the course</a> is the input to this selection process. For each significant dependency identified in the map, the question is: what is the right pattern for managing this dependency at this moment, given the nature of the dependency and the current state of the teams involved?</p>
+          </div>
+        </section>
+        <section aria-labelledby="further-reading">
+          <div class="container prose">
+            <h2 id="further-reading">Further reading</h2>
+            <ul class="reading-list">
+              <li>Leopold, K. — Rethinking Agile: Why Agile Teams Have Nothing To Do With Business Agility (the primary source for the Flight Levels model, available also via flightlevels.io)</li>
+              <li>Reinertsen, D. — The Principles of Product Development Flow (covers queuing theory and coordination cost in depth)</li>
+              <li>Galbraith, J.R. — Designing Organizations (the organisational design foundation for team API and interface concepts)</li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- RELATED RESOURCES -->
+        <section class="related" aria-labelledby="related-resources">
+          <div class="container">
+            <p class="eyebrow">Keep reading</p>
+            <h2 id="related-resources">Related resources</h2>
+            <div class="related-list">
+              <a class="card" href="/coordination-collaboration-ai/team-design-and-dependency-discovery">
+                <span class="card-kicker">Resource 06 · Cross-Team Collaboration</span>
+                <h3>Team Design and Dependency Discovery</h3>
+                <p>The dependency map is the input to pattern selection.</p>
+              </a>
+              <a class="card" href="/coordination-collaboration-ai/competency-and-skills-analysis">
+                <span class="card-kicker">Resource 07 · Cross-Team Collaboration</span>
+                <h3>Competency and Skills Analysis</h3>
+                <p>Loosen dependencies by adding capability to a team.</p>
+              </a>
+              <a class="card" href="/coordination-collaboration-ai/decision-latency-and-flow-diagnosis">
+                <span class="card-kicker">Resource 03 · Decision-Making and Alignment</span>
+                <h3>Decision Latency and Flow Diagnosis</h3>
+                <p>Flight Level 2 is where flow across teams becomes visible.</p>
+              </a>
+            </div>
+          </div>
+        </section>
+
+        <!-- PREVIOUS / NEXT -->
+        <section class="pager-section" aria-label="Previous and next resource">
+          <nav class="container pager">
+            <a class="prev" href="competency-and-skills-analysis"><span class="card-kicker">Previous · Resource 07</span>Competency and Skills Analysis</a>
+            <a class="next" href="stakeholder-segmentation-and-mapping"><span class="card-kicker">Next · Resource 09</span>Stakeholder Segmentation and Mapping</a>
+          </nav>
+        </section>
+
+      </main>
+
+      <aside class="toc-col" aria-label="On this page">
+        <details class="toc" open>
+          <summary>On this page</summary>
+          <nav>
+            <ol>
+              <li><a href="#what-this-resource-is-for">What this resource is for</a></li>
+              <li><a href="#what-coordination-patterns-are-for">What coordination patterns are for</a></li>
+              <li><a href="#common-coordination-patterns">Common coordination patterns</a></li>
+              <li><a href="#flight-levels">Flight Levels</a></li>
+              <li><a href="#the-critical-insight-altitude-mismatch">The critical insight: altitude mismatch</a></li>
+              <li><a href="#selecting-coordination-patterns-for-your-context">Selecting coordination patterns for your context</a></li>
+              <li><a href="#further-reading">Further reading</a></li>
+            </ol>
+          </nav>
+          <div class="toc-actions">
+            <p><a href="pdf/coordination-patterns-and-flight-levels.pdf" download>Download as PDF</a></p>
+            <p><a href="/coordination-collaboration-ai/">All resources for this course</a></p>
+            <p><a href="/">Search the library</a></p>
+          </div>
+        </details>
+      </aside>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+      <div class="container">
+        <p>
+          © Simon Sablowski &amp; Giuseppe De Simone
+          <a href="https://courses.simsab.net/legal-notice">Legal notice (Impressum)</a>
+          <a href="https://courses.simsab.net/privacy-policy">Privacy policy (Datenschutzerklärung)</a>
+        </p>
+      </div>
+    </footer>
+  </div>
+
+  <script src="/js/resource.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,11 @@
+# Cloudflare Pages response headers.
+# The library is meant for course participants, so search engines are asked
+# not to index it. Remove the X-Robots-Tag line (and the robots meta tag in
+# the pages) if you want the resources to be found through search engines.
+/*
+  X-Robots-Tag: noindex
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+
+/data/*
+  Cache-Control: public, max-age=0, must-revalidate

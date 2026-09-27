@@ -1,0 +1,708 @@
+/* ==========================================================================
+   simsab-resources: styles specific to the resource library.
+
+   The shared design system (fonts, colour tokens, typography, hero, cards,
+   buttons, footer) comes from the course site's stylesheet, which every page
+   loads first:
+
+     <link rel="stylesheet" href="https://courses.simsab.net/css/styles.css">
+
+   This file only adds components the course site does not have, and it only
+   uses the custom properties defined there (var(--color-primary), etc.), so a
+   change to the course site's design system carries over automatically.
+   ========================================================================== */
+
+[hidden] {
+  display: none !important;
+}
+
+/* --------------------------------------------------------------------------
+   Hero additions: breadcrumb and meta line
+   -------------------------------------------------------------------------- */
+
+.hero-bar {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: var(--space-base) var(--space-xl);
+  margin-bottom: var(--space-xl);
+}
+
+.hero-bar .breadcrumb {
+  margin: 0;
+  padding-top: var(--space-sm);
+}
+
+.btn-download {
+  flex: 0 0 auto;
+  white-space: nowrap;
+}
+
+.btn-download::before {
+  content: "↓";
+  margin-right: var(--space-sm);
+}
+
+.breadcrumb {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-xs) var(--space-sm);
+  margin: 0 0 var(--space-xl);
+  padding: 0;
+  list-style: none;
+  font-size: var(--font-size-sm);
+  font-weight: 600;
+  color: var(--color-primary-muted);
+}
+
+.breadcrumb li + li::before {
+  content: "›";
+  margin-right: var(--space-sm);
+}
+
+.breadcrumb a {
+  color: var(--color-primary-subtle);
+  text-decoration: none;
+}
+
+.breadcrumb a:hover {
+  text-decoration: underline;
+}
+
+.hero .lead:last-child {
+  margin-bottom: 0;
+}
+
+/* --------------------------------------------------------------------------
+   Resource page layout: content column plus "On this page" column
+   -------------------------------------------------------------------------- */
+
+.resource-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 300px;
+  align-items: stretch;
+}
+
+.resource-layout > .main-content {
+  min-width: 0;
+}
+
+.toc-col {
+  background: var(--color-surface-alt-bg);
+  border-left: 1px solid var(--color-border);
+}
+
+.toc {
+  position: sticky;
+  top: 0;
+  max-height: 100vh;
+  overflow-y: auto;
+  padding: var(--box-padding) 1.75rem;
+}
+
+.toc summary {
+  list-style: none;
+  cursor: pointer;
+  font-weight: 700;
+  margin-bottom: var(--space-base);
+}
+
+.toc summary::-webkit-details-marker {
+  display: none;
+}
+
+.toc ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: var(--font-size-sm);
+}
+
+.toc li + li {
+  margin-top: var(--space-sm);
+}
+
+.toc a {
+  display: block;
+  color: var(--color-text-light);
+  text-decoration: none;
+  font-weight: 600;
+  line-height: var(--line-height-tight);
+  border-left: 2px solid transparent;
+  padding-left: var(--space-md);
+  margin-left: calc(-1 * var(--space-md) - 2px);
+}
+
+.toc a:hover,
+.toc a[aria-current="true"] {
+  color: var(--color-primary);
+  border-left-color: var(--color-primary);
+}
+
+.toc-actions {
+  margin-top: var(--space-2xl);
+  padding-top: var(--space-xl);
+  border-top: 1px solid var(--color-border);
+  font-size: var(--font-size-sm);
+}
+
+.toc-actions p + p {
+  margin-top: var(--space-sm);
+}
+
+.toc-actions a {
+  color: var(--color-text-light);
+  font-weight: 700;
+}
+
+/* --------------------------------------------------------------------------
+   Long-form reading content
+   -------------------------------------------------------------------------- */
+
+.prose {
+  max-width: 44rem;
+  font-size: var(--font-size-md);
+  line-height: 1.65;
+}
+
+.prose p + p,
+.prose p + ul,
+.prose ul + p,
+.prose figure + p,
+.prose p + figure {
+  margin-top: var(--space-base);
+}
+
+.prose h2 {
+  scroll-margin-top: var(--space-2xl);
+}
+
+.prose [id] {
+  scroll-margin-top: var(--space-2xl);
+}
+
+.prose a {
+  color: var(--color-primary);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.18em;
+}
+
+.prose a:hover {
+  text-decoration-thickness: 2px;
+}
+
+/* A term defined in a paragraph: "Productive tension is ..." */
+.prose .term > strong:first-child {
+  color: var(--color-text);
+}
+
+.prose figure {
+  margin: var(--space-2xl) 0;
+}
+
+.prose figure img {
+  width: 100%;
+  height: auto;
+  background: #ffffff;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: var(--space-base);
+}
+
+.prose figure.narrow img {
+  max-width: 30rem;
+  margin: 0 auto;
+}
+
+.reading-list {
+  margin: 0;
+  padding-left: var(--space-lg);
+}
+
+.reading-list li + li {
+  margin-top: var(--space-md);
+}
+
+/* Highlight the target of an in-page or cross-resource link briefly */
+.prose :target {
+  animation: target-flash 2.4s ease-out;
+}
+
+@keyframes target-flash {
+  0%, 30% { background: rgba(15, 94, 110, 0.12); }
+  100% { background: transparent; }
+}
+
+/* --------------------------------------------------------------------------
+   Related resources and previous / next navigation
+   -------------------------------------------------------------------------- */
+
+.related-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: var(--space-base);
+}
+
+.related-list .card {
+  display: flex;
+  flex-direction: column;
+  padding: var(--space-xl);
+  text-decoration: none;
+  color: var(--color-text);
+  transition: border-color var(--transition-base);
+}
+
+.related-list .card:hover,
+.pager a:hover {
+  border-color: var(--color-primary);
+}
+
+.related-list .card h3 {
+  margin-bottom: var(--space-sm);
+}
+
+.related-list .card p {
+  color: var(--color-text-light);
+  font-size: 0.95rem;
+}
+
+.card-kicker {
+  display: block;
+  font-size: var(--font-size-xs);
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--color-eyebrow);
+  margin-bottom: var(--space-xs);
+}
+
+.pager {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-base);
+}
+
+.pager a {
+  display: block;
+  background: var(--color-surface-alt);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: var(--space-lg) var(--space-xl);
+  color: var(--color-text);
+  text-decoration: none;
+  font-weight: 700;
+  transition: border-color var(--transition-base);
+}
+
+.pager .next {
+  text-align: right;
+  grid-column: 2;
+}
+
+/* --------------------------------------------------------------------------
+   Library index: search, filters and resource cards
+   -------------------------------------------------------------------------- */
+
+/* Keep card width when only one or two cards are shown */
+.main-content .course-list {
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+
+.library-tools {
+  display: grid;
+  gap: var(--space-lg);
+  margin-bottom: var(--space-2xl);
+}
+
+.search-field {
+  position: relative;
+  max-width: 44rem;
+}
+
+.search-field label {
+  display: block;
+  font-weight: 700;
+  margin-bottom: var(--space-sm);
+}
+
+.search-input {
+  width: 100%;
+  font-family: var(--font-family-body);
+  font-size: var(--font-size-md);
+  color: var(--color-text);
+  background: var(--color-surface-alt-strong);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: var(--space-md) var(--space-base);
+  transition: border-color var(--transition-base);
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 3px rgba(15, 94, 110, 0.18);
+}
+
+.filter-group {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  min-width: 0;
+}
+
+.filter-group legend {
+  font-weight: 700;
+  margin-bottom: var(--space-sm);
+  padding: 0;
+}
+
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-sm);
+}
+
+.chip {
+  font-family: var(--font-family-body);
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--color-text);
+  background: var(--color-surface-alt);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-pill);
+  padding: 0.4rem var(--space-base);
+  cursor: pointer;
+  transition: background-color var(--transition-fast), border-color var(--transition-fast), color var(--transition-fast);
+}
+
+.chip:hover {
+  border-color: var(--color-primary);
+}
+
+.chip[aria-pressed="true"] {
+  background: var(--color-primary);
+  border-color: var(--color-primary);
+  color: var(--color-primary-contrast);
+}
+
+.chip:focus-visible,
+.search-input:focus-visible,
+.btn:focus-visible,
+.toc a:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+}
+
+.results-status {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: var(--space-sm);
+  margin-bottom: var(--space-lg);
+  color: var(--color-text-light);
+  font-weight: 600;
+}
+
+.link-button {
+  font-family: var(--font-family-body);
+  font-size: var(--font-size-sm);
+  font-weight: 700;
+  color: var(--color-primary);
+  background: none;
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.resource-card .card-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-xs) var(--space-sm);
+  margin: 0 0 var(--space-xl);
+  padding: 0;
+  list-style: none;
+  font-size: var(--font-size-xs);
+  font-weight: 700;
+  color: var(--color-text-light);
+}
+
+.resource-card .card-tags li {
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-pill);
+  padding: 0.15rem var(--space-sm);
+}
+
+.resource-card h3 a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.resource-card h3 a:hover {
+  text-decoration: underline;
+}
+
+.course-list .resource-card p.card-meta {
+  font-size: var(--font-size-sm);
+  margin: calc(-1 * var(--space-md)) 0 var(--space-lg);
+}
+
+.matches {
+  list-style: none;
+  margin: 0 0 var(--space-xl);
+  padding: 0;
+  font-size: 0.92rem;
+}
+
+.course-list article ul.matches {
+  padding: 0;
+  margin: 0 0 var(--space-xl);
+}
+
+.matches li {
+  border-left: 2px solid var(--color-primary);
+  padding-left: var(--space-md);
+}
+
+.matches li + li {
+  margin-top: var(--space-md);
+}
+
+.matches a {
+  display: block;
+  font-weight: 700;
+  color: var(--color-text);
+}
+
+.matches .snippet {
+  display: block;
+  color: var(--color-text-light);
+}
+
+mark {
+  background: rgba(15, 94, 110, 0.16);
+  color: inherit;
+  border-radius: 2px;
+  padding: 0 0.1em;
+}
+
+.module-group + .module-group {
+  margin-top: var(--space-3xl);
+}
+
+.module-group > h3 {
+  font-family: var(--font-family-heading);
+  font-size: var(--font-size-xl);
+  margin-bottom: var(--space-lg);
+}
+
+/* --------------------------------------------------------------------------
+   Concept index (A–Z)
+   -------------------------------------------------------------------------- */
+
+.concept-index {
+  columns: 3 16rem;
+  column-gap: var(--space-2xl);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.concept-index li {
+  break-inside: avoid;
+  padding: var(--space-xs) 0;
+}
+
+.concept-index a {
+  color: var(--color-text);
+  font-weight: 700;
+}
+
+.concept-index .concept-source {
+  display: block;
+  color: var(--color-text-light);
+  font-size: var(--font-size-sm);
+}
+
+/* --------------------------------------------------------------------------
+   Responsive
+   -------------------------------------------------------------------------- */
+
+@media (max-width: 960px) {
+  .resource-layout {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .toc-col {
+    order: -1;
+    border-left: 0;
+    border-bottom: 1px solid var(--color-border);
+  }
+
+  .toc {
+    position: static;
+    max-height: none;
+    padding: var(--space-lg) var(--box-padding);
+  }
+
+  .toc summary {
+    margin-bottom: 0;
+  }
+
+  .toc[open] summary {
+    margin-bottom: var(--space-base);
+  }
+
+  .toc summary::after {
+    content: " ▾";
+    font-size: var(--font-size-sm);
+  }
+
+  .toc[open] summary::after {
+    content: " ▴";
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-bar {
+    flex-direction: column;
+  }
+
+  .pager {
+    grid-template-columns: 1fr;
+  }
+
+  .pager .next {
+    grid-column: 1;
+  }
+
+  .prose {
+    font-size: var(--font-size-base);
+  }
+}
+
+/* --------------------------------------------------------------------------
+   Print and PDF (scripts/pdf.mjs prints pages with these rules)
+   -------------------------------------------------------------------------- */
+
+.print-only {
+  display: none;
+}
+
+@page {
+  size: A4;
+  margin: 16mm 0 18mm;
+}
+
+@page :first {
+  margin-top: 0;
+}
+
+@media print {
+  html {
+    scroll-behavior: auto;
+  }
+
+  body {
+    background: #ffffff;
+    font-size: 10.5pt;
+  }
+
+  .page-shell {
+    width: 100%;
+  }
+
+  .hero,
+  .badge {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  .hero {
+    padding: 14mm 18mm 10mm;
+  }
+
+  .hero h1 {
+    font-size: 26pt;
+    max-width: none;
+  }
+
+  .hero .badges {
+    margin-top: 6mm;
+  }
+
+  .hero-bar,
+  .toc-col,
+  .pager-section,
+  .related,
+  .site-footer {
+    display: none;
+  }
+
+  .resource-layout {
+    display: block;
+  }
+
+  .main-content > section,
+  .main-content > section:nth-child(even) {
+    background: #ffffff;
+    border: 0;
+    padding: 0 18mm;
+    margin-top: 7mm;
+  }
+
+  .prose {
+    max-width: none;
+    font-size: 10.5pt;
+    line-height: 1.5;
+  }
+
+  .prose h2 {
+    font-size: 17pt;
+    margin-bottom: 3mm;
+    break-after: avoid;
+    page-break-after: avoid;
+  }
+
+  .prose p {
+    orphans: 3;
+    widows: 3;
+  }
+
+  .prose figure {
+    margin: 5mm 0;
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+
+  .prose figure img {
+    max-height: 100mm;
+    width: auto;
+    max-width: 100%;
+    margin: 0 auto;
+    border: 0;
+    padding: 0;
+  }
+
+  .prose a {
+    color: inherit;
+    text-decoration-color: var(--color-primary);
+  }
+
+  .prose :target {
+    animation: none;
+  }
+
+  .print-only {
+    display: block;
+  }
+
+  .print-source {
+    padding: 0 18mm;
+    margin-top: 10mm;
+    color: var(--color-text-light);
+    font-size: 9pt;
+  }
+}
