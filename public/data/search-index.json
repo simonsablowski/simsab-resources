@@ -6,9 +6,9 @@
    "url": "/coordination-collaboration-ai/"
   },
   {
-   "slug": "facilitation-and-meetings",
-   "title": "Facilitation and Meetings",
-   "url": "/facilitation-and-meetings/"
+   "slug": "effective-meetings",
+   "title": "Designing and Facilitating Meetings That Move Work Forward",
+   "url": "/effective-meetings/"
   }
  ],
  "resources": [
@@ -766,14 +766,14 @@
    ]
   },
   {
-   "collection": "facilitation-and-meetings",
-   "collectionTitle": "Facilitation and Meetings",
+   "collection": "effective-meetings",
+   "collectionTitle": "Designing and Facilitating Meetings That Move Work Forward",
    "number": "01",
    "module": 1,
    "moduleTitle": "Designing Meetings That Work",
    "title": "Designing Effective Meetings",
-   "url": "/facilitation-and-meetings/designing-effective-meetings",
-   "pdf": "/facilitation-and-meetings/pdf/designing-effective-meetings.pdf",
+   "url": "/effective-meetings/designing-effective-meetings",
+   "pdf": "/effective-meetings/pdf/designing-effective-meetings.pdf",
    "summary": "How to design a meeting before it starts: name its goal (decide, inform or generate), right-size the invite list, and choose a format that fits the goal.",
    "tags": [
     "Meetings",
@@ -824,14 +824,14 @@
    ]
   },
   {
-   "collection": "facilitation-and-meetings",
-   "collectionTitle": "Facilitation and Meetings",
+   "collection": "effective-meetings",
+   "collectionTitle": "Designing and Facilitating Meetings That Move Work Forward",
    "number": "02",
    "module": 2,
    "moduleTitle": "Facilitating Meetings That Move Forward",
    "title": "The Facilitation Toolkit",
-   "url": "/facilitation-and-meetings/facilitation-toolkit",
-   "pdf": "/facilitation-and-meetings/pdf/facilitation-toolkit.pdf",
+   "url": "/effective-meetings/facilitation-toolkit",
+   "pdf": "/effective-meetings/pdf/facilitation-toolkit.pdf",
    "summary": "Simple tools for everyday meetings: setting expectations, timeboxing, ROTI, round robin, 1-2-4-All, brainwriting, dot voting, fist to five, and the parking lot.",
    "tags": [
     "Facilitation",
@@ -910,14 +910,14 @@
    ]
   },
   {
-   "collection": "facilitation-and-meetings",
-   "collectionTitle": "Facilitation and Meetings",
+   "collection": "effective-meetings",
+   "collectionTitle": "Designing and Facilitating Meetings That Move Work Forward",
    "number": "03",
    "module": 2,
    "moduleTitle": "Facilitating Meetings That Move Forward",
    "title": "Running an Efficient Meeting",
-   "url": "/facilitation-and-meetings/running-an-efficient-meeting",
-   "pdf": "/facilitation-and-meetings/pdf/running-an-efficient-meeting.pdf",
+   "url": "/effective-meetings/running-an-efficient-meeting",
+   "pdf": "/effective-meetings/pdf/running-an-efficient-meeting.pdf",
    "summary": "Five practical adjustments for meetings that already have the right goal, people and format, but still run long and leave people frustrated.",
    "tags": [
     "Meetings",

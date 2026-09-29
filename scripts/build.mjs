@@ -145,14 +145,18 @@ console.log(`Wrote data/search-index.json (${resources.length} resources)`);
 
 const I = (n) => ' '.repeat(n);
 
+// Modules are numbered within a course, so a module is identified by
+// collection and number together. Only the module title is shown.
+const moduleKey = (r) => `${r.collection}:${r.module}`;
+
 function card(r, { showCollection }) {
-  const kicker = r.module ? `Module ${r.module} · ${r.moduleTitle}` : r.collectionTitle;
+  const kicker = r.module ? r.moduleTitle : r.collectionTitle;
   const meta = [
     showCollection ? escapeHtml(r.collectionTitle) : '',
     r.readingTime ? `${r.readingTime} min read` : '',
   ].filter(Boolean).join(' · ');
   return [
-    `${I(10)}<article class="course-card resource-card" data-collection="${escapeHtml(r.collection)}" data-module="${r.module ?? ''}" data-tags="${escapeHtml(r.tags.join('|'))}" data-url="${escapeHtml(r.url)}">`,
+    `${I(10)}<article class="course-card resource-card" data-collection="${escapeHtml(r.collection)}" data-module="${r.module ? escapeHtml(moduleKey(r)) : ''}" data-tags="${escapeHtml(r.tags.join('|'))}" data-url="${escapeHtml(r.url)}">`,
     `${I(12)}<span class="course-tag">${escapeHtml(kicker)}</span>`,
     `${I(12)}<h3><a href="${escapeHtml(r.url)}">${escapeHtml(r.number)} · ${escapeHtml(r.title)}</a></h3>`,
     `${I(12)}<p class="card-meta">${meta}</p>`,
@@ -189,9 +193,10 @@ function chips(name, values) {
   let html = readFileSync(file, 'utf8');
   const multi = collections.length > 1;
 
+  // Grouped by collection, in module order within each collection.
   const modules = [...new Map(resources.filter((r) => r.module)
-    .map((r) => [String(r.module), `Module ${r.module} · ${r.moduleTitle}`])).entries()]
-    .sort((a, b) => a[0].localeCompare(b[0]));
+    .sort((a, b) => a.collection.localeCompare(b.collection) || a.module - b.module)
+    .map((r) => [moduleKey(r), r.moduleTitle])).entries()];
   const topics = [...new Set(resources.flatMap((r) => r.tags))].sort().map((t) => [t, t]);
   const collectionChips = collections.map((c) => [c.slug, c.title]);
 
@@ -235,7 +240,7 @@ for (const collection of collections) {
   const list = resources.filter((r) => r.collection === collection.slug);
   const byModule = new Map();
   for (const r of list) {
-    const key = r.module ? `Module ${r.module} · ${r.moduleTitle}` : 'Resources';
+    const key = r.module ? r.moduleTitle : 'Resources';
     if (!byModule.has(key)) byModule.set(key, []);
     byModule.get(key).push(r);
   }

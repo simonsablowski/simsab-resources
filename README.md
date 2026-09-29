@@ -32,8 +32,8 @@ Current collections:
 
 - `coordination-collaboration-ai`: the ten resources for *Leading Coordination
   and Collaboration in AI-Accelerated Organisations*, grouped by module.
-- `facilitation-and-meetings`: three generic resources on facilitation tools,
-  meeting design and running meetings.
+- `effective-meetings`: three resources for *Designing and Facilitating
+  Meetings That Move Work Forward*, grouped by module.
 
 ## Shared styling with the course site
 
@@ -86,7 +86,7 @@ pages that changed.
 ### Add a collection
 
 Create `public/<new-collection>/` with an `index.html` (copy
-`public/facilitation-and-meetings/index.html` and change the text). Keep the
+`public/effective-meetings/index.html` and change the text). Keep the
 `<!-- build:... -->` markers; the build fills them. The collection filter on
 the index page appears automatically once there is more than one collection.
 

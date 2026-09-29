@@ -303,6 +303,17 @@
    Library index: search, filters and resource cards
    -------------------------------------------------------------------------- */
 
+/* Module or collection label on a card: teal text, no pill shape */
+.course-list .resource-card .course-tag {
+  padding: 0;
+  background: none;
+  border-radius: 0;
+  color: var(--color-primary);
+  letter-spacing: 0.06em;
+  line-height: var(--line-height-tight);
+  margin-bottom: var(--space-sm);
+}
+
 /* Keep card width when only one or two cards are shown */
 .main-content .course-list {
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -705,4 +716,9 @@ mark {
     color: var(--color-text-light);
     font-size: 9pt;
   }
+}
+
+/* On course pages the cards are already grouped under the module heading */
+.module-group .resource-card .course-tag {
+  display: none;
 }

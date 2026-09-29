@@ -1,0 +1,3 @@
+# The Facilitation and Meetings collection was renamed to match its course.
+/facilitation-and-meetings/* /effective-meetings/:splat 301
+/facilitation-and-meetings /effective-meetings/ 301
