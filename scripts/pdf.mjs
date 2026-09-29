@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 /**
- * Generates a PDF for every resource page and stores it next to the page:
+ * Generates a PDF for every resource page and printable template, and stores
+ * it next to the page:
  *
  *   public/<course>/<slug>.html  ->  public/<course>/pdf/<slug>.pdf
  *
@@ -75,7 +76,8 @@ const hash = (...parts) => createHash('sha256').update(parts.join('\u0000')).dig
 
 const pages = walk(PUBLIC)
   .filter((f) => f.endsWith('.html'))
-  .filter((f) => /<meta\s+name="resource:number"/.test(readFileSync(f, 'utf8')))
+  // Resource pages and printable templates.
+  .filter((f) => /<meta\s+name="(resource:number|template:collection)"/.test(readFileSync(f, 'utf8')))
   .map((file) => {
     const rel = relative(PUBLIC, file).split('\\').join('/');
     const urlPath = '/' + rel.replace(/\.html$/, '');
@@ -90,7 +92,7 @@ if (!pages.length) {
 }
 
 const manifest = existsSync(MANIFEST) ? JSON.parse(readFileSync(MANIFEST, 'utf8')) : {};
-const styleInputs = [readFileSync(join(PUBLIC, 'css', 'resources.css'), 'utf8')];
+const styleInputs = ['resources.css', 'templates.css'].map((f) => readFileSync(join(PUBLIC, 'css', f), 'utf8'));
 if (useLocalShared) styleInputs.push(readFileSync(join(SHARED_DIR, 'css', 'styles.css'), 'utf8'));
 
 const todo = pages.filter((p) => {
@@ -157,7 +159,9 @@ for (const p of todo) {
       const imgs = Array.from(document.images);
       imgs.forEach((img) => { img.loading = 'eager'; });
       await Promise.all(imgs.map((img) => (img.complete ? null : new Promise((ok) => { img.onload = img.onerror = ok; }))));
-      // Pointer to the online version at the end of the document.
+      // Pointer to the online version at the end of the document
+      // (not on templates, which must stay on one page).
+      if (document.body.classList.contains('template-page')) return;
       const note = document.createElement('p');
       note.className = 'print-only print-source';
       note.textContent = `Online version with links to related resources: ${site}${urlPath}`;

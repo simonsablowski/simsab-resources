@@ -9,6 +9,11 @@
    "slug": "effective-meetings",
    "title": "Designing and Facilitating Meetings That Move Work Forward",
    "url": "/effective-meetings/"
+  },
+  {
+   "slug": "product-ownership",
+   "title": "Product Ownership: Deciding What to Build and Why",
+   "url": "/product-ownership/"
   }
  ],
  "resources": [
@@ -944,6 +949,500 @@
      "id": "five-practical-adjustments",
      "heading": "Five practical adjustments",
      "text": "Separating the facilitator from the content owner keeps the clock protected. When the same person is presenting the material and also managing the discussion and the time, timekeeping is usually the first thing to slip. Agreeing the decision criteria before the meeting , rather than during it, stops a Decide meeting turning into a debate about what \"good enough\" looks like. If the group agrees the standard in advance, the meeting itself can focus on applying it to the options in front of them. Unclear decision criteria are one of the main causes of slow decisions. Giving a recurring meeting a standing structure , the same shape every time, saves the time that would otherwise go into re-establishing the format at the start of each session. Novelty is expensive in a meeting that happens every week. Defaulting to written input before open discussion , the same principle behind brainwriting , moves the live conversation from restating positions to actually resolving disagreement, since everyone has already read what everyone else thinks. Closing with a short, explicit recap , what was decided, who owns the next step, and by when, prevents a meeting from trailing off without a clean end. A meeting that ends this way rarely needs a second meeting later just to re-establish what was agreed."
+    }
+   ]
+  },
+  {
+   "collection": "product-ownership",
+   "collectionTitle": "Product Ownership: Deciding What to Build and Why",
+   "number": "01",
+   "module": 1,
+   "moduleTitle": "Product Discovery",
+   "title": "From Output to Outcome",
+   "url": "/product-ownership/from-output-to-outcome",
+   "pdf": "/product-ownership/pdf/from-output-to-outcome.pdf",
+   "summary": "Why product ownership is a different discipline from project management, and why the goal is as little output as possible for as much outcome as possible.",
+   "tags": [
+    "Product ownership",
+    "Outcomes"
+   ],
+   "readingTime": 1,
+   "concepts": [
+    {
+     "name": "Output and outcome",
+     "id": "output-and-outcome"
+    }
+   ],
+   "sections": [
+    {
+     "id": "products-are-not-projects",
+     "heading": "Products are not projects",
+     "text": "Digital products are never really finished. Unlike a physical product with a fixed manufacturing process, software evolves continuously, often for years, adapting to changing needs. This is why product ownership is a fundamentally different discipline from project management. A project has a defined start and end date, a fixed scope, and usually a single customer. Success is measured by hitting the deadline, staying within budget and delivering the agreed scope. A product, by contrast, has no natural end date. It serves multiple customer groups whose needs shift over time, and it carries a much wider set of risks that need continuous attention."
+    },
+    {
+     "id": "output-and-outcome",
+     "heading": "Output and outcome",
+     "text": "This distinction matters because it changes what we optimise for. Everything between an idea and something working and shippable is called output: features, tickets, releases. What happens once that output reaches real people is called outcome: a change in behaviour, in satisfaction, in business results. A Product Owner's job is not to produce more output faster. It is to produce as little output as possible while creating as much outcome as possible. This reframing is the foundation for all the resources in this collection. Every method they cover, from opportunity framing to story mapping to prioritisation, exists to help a team spend its limited capacity on the work most likely to create real impact, rather than simply working through a queue of requests."
+    }
+   ]
+  },
+  {
+   "collection": "product-ownership",
+   "collectionTitle": "Product Ownership: Deciding What to Build and Why",
+   "number": "02",
+   "module": 1,
+   "moduleTitle": "Product Discovery",
+   "title": "Product Vision and Strategy",
+   "url": "/product-ownership/product-vision-and-strategy",
+   "pdf": "/product-ownership/pdf/product-vision-and-strategy.pdf",
+   "summary": "What a product vision is, five ways to create one, the elevator pitch format, and how a strategy turns vision into everyday decisions.",
+   "tags": [
+    "Product vision",
+    "Strategy"
+   ],
+   "readingTime": 2,
+   "concepts": [
+    {
+     "name": "Product vision",
+     "id": "what-a-product-vision-is"
+    },
+    {
+     "name": "Elevator pitch",
+     "id": "the-elevator-pitch"
+    }
+   ],
+   "sections": [
+    {
+     "id": "what-a-product-vision-is",
+     "heading": "What a product vision is",
+     "text": "A product vision is a short, inspiring statement that answers two questions: what are we building, and why does it matter. It needs to work for everyone with a stake in the product, from developers to executives to customers, and it needs to create a shared sense of direction that guides day-to-day decisions."
+    },
+    {
+     "id": "five-ways-to-create-a-vision",
+     "heading": "Five ways to create a vision",
+     "text": "There are several ways to arrive at a vision, ranging from low effort and low impact to high effort and high impact. Peter Senge, in The Fifth Discipline Fieldbook, describes five: telling people the vision, selling it to them, testing it by gathering reactions, consulting specialists and stakeholders for input, and co-creating it together with the people who will live with it. Co-creation takes the most time but produces the strongest buy-in, because everyone involved becomes a co-owner of the outcome. A practical approach is to draft a vision through co-creation, then iterate through rounds of consulting and testing until it feels right."
+    },
+    {
+     "id": "the-elevator-pitch",
+     "heading": "The elevator pitch",
+     "text": "One useful format for expressing a vision concisely is the elevator pitch. It follows a simple template: for a target customer who has a specific need or frustration, our product is a category of solution that delivers a key benefit, and unlike the main competitor, we differentiate ourselves in a particular way. Filling in this template forces clarity about who the product is for and why it matters, in language a stakeholder could absorb during a short elevator ride."
+    },
+    {
+     "id": "from-vision-to-strategy",
+     "heading": "From vision to strategy",
+     "text": "Vision sets direction, but strategy translates that direction into ongoing decisions about where to invest. Rather than prescribing fixed solutions, it helps to agree on a small set of values that guide judgement, similar in spirit to the Agile Manifesto: valuing the ability to evaluate and adapt frequently over rigid long-range planning, responding to emerging opportunities over sticking to a fixed plan, and managing overall value over managing costs in isolation. These principles create a compass that lets a Product Owner make consistent, defensible decisions even as circumstances change, and they connect naturally to measurable goals and KPIs, since a strategy is only useful if you can tell whether it is working."
+    },
+    {
+     "id": "templates",
+     "heading": "Templates",
+     "text": "Printable A4 worksheets for applying this resource to your own product. Elevator Pitch Canvas Draft a concise, testable statement of your product vision. Download PDF"
+    }
+   ]
+  },
+  {
+   "collection": "product-ownership",
+   "collectionTitle": "Product Ownership: Deciding What to Build and Why",
+   "number": "03",
+   "module": 1,
+   "moduleTitle": "Product Discovery",
+   "title": "Understanding Users",
+   "url": "/product-ownership/understanding-users",
+   "pdf": "/product-ownership/pdf/understanding-users.pdf",
+   "summary": "Three techniques for understanding the people a product serves: personas, empathy mapping and customer interviews, and why assumptions must be validated.",
+   "tags": [
+    "User research"
+   ],
+   "readingTime": 2,
+   "concepts": [
+    {
+     "name": "Personas",
+     "id": "personas"
+    },
+    {
+     "name": "Empathy map",
+     "id": "empathy-mapping"
+    },
+    {
+     "name": "Customer interviews",
+     "id": "customer-interviews"
+    }
+   ],
+   "sections": [
+    {
+     "id": "three-techniques",
+     "heading": "Three techniques",
+     "text": "Great product decisions start with a real understanding of the people the product serves. Three techniques help build that understanding: personas, empathy mapping, and customer interviews."
+    },
+    {
+     "id": "personas",
+     "heading": "Personas",
+     "text": "A persona is a description of a distinct type of customer or user, built from real research rather than assumptions. Creating one starts with collecting and analysing data about actual customers through interviews, observations or simulations, forming hypotheses about how different customers vary from one another. Each persona is then given a name and a fuller picture, including things like their goals, frustrations and context, so the team can empathise with their perspective rather than just their demographics. Personas become more useful when applied to specific scenarios, such as a delivery being delayed or a product being unavailable, because this reveals what the persona actually needs in a moment that matters."
+    },
+    {
+     "id": "empathy-mapping",
+     "heading": "Empathy mapping",
+     "text": "Empathy mapping is a simple collaborative tool used to deepen understanding of a specific user or persona by making their experience more tangible. It typically explores what the user says, thinks, does and feels in a given situation, often around a specific scenario such as completing a purchase or dealing with a problem. By externalising these perspectives, teams can surface assumptions, identify gaps in their understanding, and build a more rounded picture of user needs that goes beyond functional requirements. Empathy maps are especially useful early in discovery or alongside interviews and persona work, as they help turn fragmented observations into a shared, human-centred view that supports better design decisions."
+    },
+    {
+     "id": "customer-interviews",
+     "heading": "Customer interviews",
+     "text": "Customer interviews are the main way to gather this kind of insight directly. A good interview has a loose structure: an introduction and rapport-building phase, a phase of evoking stories and exploring emotions, and a closing phase that thanks the interviewee. It helps to have two people involved, one asking questions and managing the flow, the other observing body language and mood. During the interview itself, the goal is to ask open questions and ask why often, let the customer speak for most of the conversation, avoid judgement, and stay comfortable with silence rather than rushing to fill it."
+    },
+    {
+     "id": "validate-your-assumptions",
+     "heading": "Validate your assumptions",
+     "text": "Underlying all three techniques is a simple but easily forgotten principle: it is fine to make assumptions about what customers want, as long as those assumptions get validated. Locking a team in a room and guessing at customer needs is the single most common way products go wrong. Customer centricity means placing the customer's actual, observed needs at the centre of the decision-making process, and constantly checking assumptions against reality rather than trusting them by default."
+    },
+    {
+     "id": "templates",
+     "heading": "Templates",
+     "text": "Printable A4 worksheets for applying this resource to your own product. Persona Canvas Describe one type of user, based on real research. Download PDF Empathy Map Build a shared picture of what a user says, thinks, does and feels. Download PDF Customer Interview Prep Sheet Plan an interview stage by stage. Download PDF"
+    }
+   ]
+  },
+  {
+   "collection": "product-ownership",
+   "collectionTitle": "Product Ownership: Deciding What to Build and Why",
+   "number": "04",
+   "module": 1,
+   "moduleTitle": "Product Discovery",
+   "title": "Opportunity Exploration",
+   "url": "/product-ownership/opportunity-exploration",
+   "pdf": "/product-ownership/pdf/opportunity-exploration.pdf",
+   "summary": "Deciding which problem is worth solving before writing user stories, using the Opportunity Canvas together with stakeholders, customers and developers.",
+   "tags": [
+    "Product discovery"
+   ],
+   "readingTime": 1,
+   "concepts": [
+    {
+     "name": "Opportunity Canvas",
+     "id": "the-opportunity-canvas"
+    }
+   ],
+   "sections": [
+    {
+     "id": "deciding-which-problem-is-worth-solving",
+     "heading": "Deciding which problem is worth solving",
+     "text": "Between understanding users and writing user stories sits a crucial step that teams often skip: deciding which problem is actually worth solving. The Opportunity Canvas is a lightweight tool for making that decision together with stakeholders, customers and developers, rather than in isolation."
+    },
+    {
+     "id": "the-opportunity-canvas",
+     "heading": "The Opportunity Canvas",
+     "text": "The canvas works through five core questions. First, what is the opportunity: what problem are we solving, and how do customers cope with it today. Conversations here tend to drift toward solutions too quickly, so it helps to keep asking why, five times if needed, until the real underlying problem is clear. Second, who are the customer segments that would benefit from solving this problem. Third, what could a possible solution look like, ideally more than one option, starting from the simplest version that could work. Fourth, what are the actual benefits to the customer: how would this help them do something they cannot do today, or do it faster or more easily. Fifth, what does the business need to have in place for the solution to be usable, such as legal, commercial or operational readiness."
+    },
+    {
+     "id": "why-the-conversation-matters",
+     "heading": "Why the conversation matters",
+     "text": "The value of the canvas is less about the completed document and more about the conversation it forces. It shifts a team away from opinion-based prioritisation, where the loudest voice or the most senior title wins, toward a shared, evidence-based understanding of what is worth building next. The outcome of this exploration is often expressed as a concrete, near-term objective the team commits to before moving on to the next one, sitting underneath the longer-term product vision."
+    },
+    {
+     "id": "templates",
+     "heading": "Templates",
+     "text": "Printable A4 worksheets for applying this resource to your own product. Opportunity Canvas Structure a conversation with stakeholders about one opportunity. Download PDF"
+    }
+   ]
+  },
+  {
+   "collection": "product-ownership",
+   "collectionTitle": "Product Ownership: Deciding What to Build and Why",
+   "number": "05",
+   "module": 1,
+   "moduleTitle": "Product Discovery",
+   "title": "User Stories and Acceptance Criteria",
+   "url": "/product-ownership/user-stories-and-acceptance-criteria",
+   "pdf": "/product-ownership/pdf/user-stories-and-acceptance-criteria.pdf",
+   "summary": "What a user story really is, the 3Cs, acceptance criteria in a given-when-then structure, INVEST, vertical slicing, and the Definition of Ready and Done.",
+   "tags": [
+    "User stories",
+    "Backlog"
+   ],
+   "readingTime": 2,
+   "concepts": [
+    {
+     "name": "User story",
+     "id": "what-a-user-story-is"
+    },
+    {
+     "name": "3Cs: card, conversation, confirmation",
+     "id": "card-conversation-confirmation"
+    },
+    {
+     "name": "INVEST",
+     "id": "invest-and-splitting-stories"
+    },
+    {
+     "name": "Definition of Ready and Definition of Done",
+     "id": "definition-of-ready-and-definition-of-done"
+    }
+   ],
+   "sections": [
+    {
+     "id": "what-a-user-story-is",
+     "heading": "What a user story is",
+     "text": "A user story is often mistaken for a requirements format, but it is really meant to be exactly what it sounds like: a story about a user doing something in their own domain, captured in natural language rather than technical specification. The idea originated with Extreme Programming in the 1990s and is commonly written as: as a role, I want some functionality, in order to achieve a reason. This format is useful because it forces answers to three questions: who is this for, what do they want to do that they cannot do today, and why does it matter to them. The template itself is less important than making sure those three questions are actually answered."
+    },
+    {
+     "id": "card-conversation-confirmation",
+     "heading": "Card, conversation, confirmation",
+     "text": "Ron Jeffries described this well with the 3Cs: a card, short enough to fit on an index card, prompts a conversation between the team and the people who will use the feature, and once a shared understanding is reached, that understanding is confirmed through acceptance criteria. Acceptance criteria describe how the product should behave in a specific scenario and are often written in a given, when, then structure: given some initial condition, when an event occurs, then an expected outcome follows. Both positive criteria, describing what should happen, and negative criteria, describing what should not happen, are useful."
+    },
+    {
+     "id": "invest-and-splitting-stories",
+     "heading": "INVEST and splitting stories",
+     "text": "Bill Wake's INVEST acronym is a useful checklist for whether a story is well formed: independent enough to be prioritised on its own, negotiable in its details, valuable to the user, estimable in size, small enough to get fast feedback, and testable so the team knows when it is done. Splitting large stories into smaller ones that still satisfy INVEST is a skill in itself. The key is to aim for vertical slices, changes that touch every layer of the system needed to deliver real, observable value, rather than horizontal slices that only touch one architectural layer and deliver nothing usable on their own."
+    },
+    {
+     "id": "definition-of-ready-and-definition-of-done",
+     "heading": "Definition of Ready and Definition of Done",
+     "text": "Finally, a story is only ready to be picked up once it meets a team's Definition of Ready: it is clear to everyone, it has two or three acceptance criteria, and it is feasible within a short cycle. This is distinct from the Definition of Done, which applies to every item and describes the quality bar the finished work must meet before it counts as complete."
+    },
+    {
+     "id": "templates",
+     "heading": "Templates",
+     "text": "Printable A4 worksheets for applying this resource to your own product. User Story and Acceptance Criteria Card Write one user story with its acceptance criteria. Download PDF INVEST Checklist Check whether a user story is well formed. Download PDF"
+    }
+   ]
+  },
+  {
+   "collection": "product-ownership",
+   "collectionTitle": "Product Ownership: Deciding What to Build and Why",
+   "number": "06",
+   "module": 2,
+   "moduleTitle": "Product Delivery",
+   "title": "Story Mapping",
+   "url": "/product-ownership/story-mapping",
+   "pdf": "/product-ownership/pdf/story-mapping.pdf",
+   "summary": "How a story map arranges the backlog along the user journey, its three layers, and Jeff Patton's five steps from framing to a delivery strategy.",
+   "tags": [
+    "Backlog",
+    "Planning"
+   ],
+   "readingTime": 2,
+   "concepts": [
+    {
+     "name": "Story map",
+     "id": "the-structure-of-a-story-map"
+    },
+    {
+     "name": "Walking skeleton and release slices",
+     "id": "building-a-story-map-in-five-steps"
+    }
+   ],
+   "sections": [
+    {
+     "id": "why-a-flat-backlog-is-not-enough",
+     "heading": "Why a flat backlog is not enough",
+     "text": "A product backlog on its own is just a flat list, and flat lists hide the bigger picture. Story mapping, introduced by Jeff Patton in User Story Mapping, arranges stories into a narrative that follows the user's actual journey, making it much easier to see how individual pieces of work connect to the whole and where gaps remain."
+    },
+    {
+     "id": "the-structure-of-a-story-map",
+     "heading": "The structure of a story map",
+     "text": "A story map has three layers. Across the top sits the backbone: user activities, the main things a user needs to do to reach their goal, arranged left to right in the order they naturally occur. Beneath each activity sit user tasks, the more detailed steps that make up that activity. Beneath each task sit details: sub-tasks, alternatives, exceptions and edge cases, which hang below the backbone the way ribs hang from a spine. Sequence runs horizontally, and priority runs vertically, with the most essential items sitting closest to the backbone."
+    },
+    {
+     "id": "building-a-story-map-in-five-steps",
+     "heading": "Building a story map in five steps",
+     "text": "Patton describes building a map in five steps. Frame the big story first: what is the product or feature, who is it for, and why does it matter. Map the big picture by identifying the most critical user types and their activities to form the backbone. Explore variations and exceptions by breaking activities into tasks and considering alternative paths, ideally with input from others who can spot gaps. Slice out viable releases by deciding what a first, minimal end-to-end version looks like, often called a walking skeleton, and how later releases will build on it. Finally, slice out a delivery strategy across an opening phase that builds the skeleton, a mid-game that completes and refines major functionality based on feedback, and an end game that polishes the product for release."
+    },
+    {
+     "id": "keep-the-map-visible",
+     "heading": "Keep the map visible",
+     "text": "The map should stay visible throughout development. It functions as a living planning board and a constant reminder of the user's actual journey, which is easy to lose sight of once a backlog fragments into individual tickets."
+    },
+    {
+     "id": "templates",
+     "heading": "Templates",
+     "text": "Printable A4 worksheets for applying this resource to your own product. Story Mapping Process The five steps of building a story map, as a reference. Download PDF"
+    }
+   ]
+  },
+  {
+   "collection": "product-ownership",
+   "collectionTitle": "Product Ownership: Deciding What to Build and Why",
+   "number": "07",
+   "module": 2,
+   "moduleTitle": "Product Delivery",
+   "title": "Prioritisation Techniques",
+   "url": "/product-ownership/prioritisation-techniques",
+   "pdf": "/product-ownership/pdf/prioritisation-techniques.pdf",
+   "summary": "Absolute and relative value, the Kano model, Cost of Delay and WSJF, and simple group techniques such as dot voting and triage.",
+   "tags": [
+    "Prioritisation",
+    "Decision-making"
+   ],
+   "readingTime": 2,
+   "concepts": [
+    {
+     "name": "Kano model",
+     "id": "the-kano-model"
+    },
+    {
+     "name": "Cost of Delay and WSJF",
+     "id": "cost-of-delay-and-wsjf"
+    }
+   ],
+   "sections": [
+    {
+     "id": "what-value-means",
+     "heading": "What value means",
+     "text": "Prioritisation always comes down to one underlying question: what creates the most value for the least effort, and who decides. Because value is subjective, organisations need to agree, even loosely, on how they define it, and that definition can shift depending on context. Absolute value tries to quantify impact directly, using measures such as net present value or return on investment, but this is often too slow and uncertain for everyday backlog work. Relative value sidesteps this by comparing items to each other rather than pricing them precisely, the way it's easier to say one piece of fruit looks heavier than another than to guess its exact weight."
+    },
+    {
+     "id": "the-kano-model",
+     "heading": "The Kano model",
+     "text": "The Kano model, developed by Noriaki Kano, plots features against customer satisfaction and sorts them into useful categories. Basic features are expected by default and draw complaints if missing. Performance features raise satisfaction roughly in proportion to how much you deliver. Delighters create disproportionate satisfaction precisely because nobody asked for them. Two categories are worth avoiding: features customers are indifferent to, and features that actively dissatisfy them."
+    },
+    {
+     "id": "cost-of-delay-and-wsjf",
+     "heading": "Cost of Delay and WSJF",
+     "text": "Cost of Delay estimates what it costs to not deliver something, by weighing an item's value against how quickly that value decays over time, and is especially useful for comparing items that look similar in effort but differ sharply in urgency. Weighted Shortest Job First builds on this: it divides Cost of Delay by job size, so smaller items with time-sensitive value naturally rise to the top, countering the trap of prioritising by size alone."
+    },
+    {
+     "id": "simple-techniques",
+     "heading": "Simple techniques",
+     "text": "Simpler techniques still have their place. Dot voting and Fist of Five let a group quickly gauge agreement. Triage, borrowed from emergency medicine, asks a blunter question: is this the most critical thing to act on right now. HIPPO, the Highest Paid Person's Opinion, remains the most common method in practice despite being the least reliable, since speed should rarely outrank the quality of the decision."
+    },
+    {
+     "id": "templates",
+     "heading": "Templates",
+     "text": "Printable A4 worksheets for applying this resource to your own product. Prioritisation Worksheet Score backlog items and rank them by WSJF. Download PDF Kano Model Sort candidate features into the five Kano categories. Download PDF"
+    }
+   ]
+  },
+  {
+   "collection": "product-ownership",
+   "collectionTitle": "Product Ownership: Deciding What to Build and Why",
+   "number": "08",
+   "module": 2,
+   "moduleTitle": "Product Delivery",
+   "title": "Roadmapping and Strategy Execution",
+   "url": "/product-ownership/roadmapping-and-strategy-execution",
+   "pdf": "/product-ownership/pdf/roadmapping-and-strategy-execution.pdf",
+   "summary": "How a Now-Next-Later roadmap translates strategy into action without promising more certainty than exists, and why roadmaps should be built on outcomes.",
+   "tags": [
+    "Roadmapping",
+    "Planning"
+   ],
+   "readingTime": 1,
+   "concepts": [
+    {
+     "name": "Now-Next-Later roadmap",
+     "id": "now-next-later"
+    }
+   ],
+   "sections": [
+    {
+     "id": "what-a-roadmap-is-for",
+     "heading": "What a roadmap is for",
+     "text": "A roadmap exists to translate a product strategy into something a team and its stakeholders can actually act on, without pretending to know more about the future than anyone really does. The tension a roadmap has to manage is that stakeholders often want certainty and fixed dates, while product work is inherently uncertain the further out you look."
+    },
+    {
+     "id": "now-next-later",
+     "heading": "Now, Next, Later",
+     "text": "The Now-Next-Later format, popularised by Janna Bastow, resolves this by grouping initiatives into three horizons instead of a fixed timeline. Now covers what the team is actively working on, with a reasonably high degree of confidence about scope and outcome. Next covers what is coming after that, defined clearly enough to prepare for but still open to change. Later covers ideas and directions being considered, deliberately kept loose since committing to details this far out usually turns out to be wasted effort once reality intervenes. This structure protects a team from overpromising while still giving stakeholders visibility into direction."
+    },
+    {
+     "id": "roadmaps-built-on-outcomes",
+     "heading": "Roadmaps built on outcomes",
+     "text": "A strong roadmap is organised around outcomes and business intent rather than a list of features and ship dates. Each item on the roadmap should be traceable back to why it matters: which part of the product vision or which measurable goal it serves. This keeps the roadmap useful as a communication tool with leadership, since it lets a Product Owner talk about strategic intent and expected impact rather than defending a fixed list of promised deliverables. A roadmap built this way also stays easier to update: when priorities shift, it is the initiatives inside each horizon that move, not the underlying story of where the product is heading."
+    },
+    {
+     "id": "templates",
+     "heading": "Templates",
+     "text": "Printable A4 worksheets for applying this resource to your own product. Now-Next-Later Roadmap Canvas Plan initiatives in three horizons instead of on a timeline. Download PDF"
+    }
+   ]
+  },
+  {
+   "collection": "product-ownership",
+   "collectionTitle": "Product Ownership: Deciding What to Build and Why",
+   "number": "09",
+   "module": 2,
+   "moduleTitle": "Product Delivery",
+   "title": "Stakeholder and Team Collaboration",
+   "url": "/product-ownership/stakeholder-and-team-collaboration",
+   "pdf": "/product-ownership/pdf/stakeholder-and-team-collaboration.pdf",
+   "summary": "Mapping stakeholders by influence and interest, managing expectations through transparency, and connecting the team's work to the product vision.",
+   "tags": [
+    "Stakeholders",
+    "Communication"
+   ],
+   "readingTime": 1,
+   "concepts": [
+    {
+     "name": "Influence and interest grid",
+     "id": "stakeholder-mapping"
+    }
+   ],
+   "sections": [
+    {
+     "id": "knowing-your-stakeholders",
+     "heading": "Knowing your stakeholders",
+     "text": "No product decision happens in a vacuum. A Product Owner constantly balances the needs of users against the expectations of a wider set of stakeholders, and doing that well starts with knowing who those stakeholders actually are and what they care about."
+    },
+    {
+     "id": "stakeholder-mapping",
+     "heading": "Stakeholder mapping",
+     "text": "Stakeholder mapping is a simple way to make this explicit. Stakeholders are plotted on two dimensions: their level of interest in the product, and their level of influence over its success. Someone with high influence and high interest needs to be closely engaged and involved in key decisions. Someone with high influence but lower day-to-day interest needs to be kept satisfied and informed at the right moments, without being pulled into every detail. Someone with high interest but limited influence benefits from being kept informed, since they can be a useful source of feedback and advocacy. Someone with low interest and low influence needs only light, occasional monitoring. Mapping stakeholders this way prevents the common trap of spending equal effort on everyone, when in practice attention needs to be distributed deliberately."
+    },
+    {
+     "id": "managing-expectations",
+     "heading": "Managing expectations",
+     "text": "Managing expectations well depends on transparency. Stakeholders tend to lose trust not because priorities change, since that is normal in product work, but because they are surprised by changes they were not prepared for. Sharing the reasoning behind decisions, not just the decisions themselves, and revisiting commitments openly as new information arrives, keeps that trust intact."
+    },
+    {
+     "id": "collaboration-within-the-team",
+     "heading": "Collaboration within the team",
+     "text": "Within the team, collaboration works the same way it does with external stakeholders: it depends on shared understanding of why work matters, not just what work is scheduled. A Product Owner who consistently connects day-to-day backlog decisions back to the product vision and current goals gives the team a basis for good judgement even in moments when the Product Owner is not in the room."
+    },
+    {
+     "id": "templates",
+     "heading": "Templates",
+     "text": "Printable A4 worksheets for applying this resource to your own product. Stakeholder Influence and Interest Grid Decide how much and what kind of attention each stakeholder needs. Download PDF"
+    }
+   ]
+  },
+  {
+   "collection": "product-ownership",
+   "collectionTitle": "Product Ownership: Deciding What to Build and Why",
+   "number": "10",
+   "module": 2,
+   "moduleTitle": "Product Delivery",
+   "title": "Common Pitfalls",
+   "url": "/product-ownership/common-pitfalls",
+   "pdf": "/product-ownership/pdf/common-pitfalls.pdf",
+   "summary": "The five mistakes new Product Owners make most often, how other mistakes group into a few categories, and a short checklist to avoid them.",
+   "tags": [
+    "Product ownership"
+   ],
+   "readingTime": 2,
+   "concepts": [
+    {
+     "name": "Product ownership pitfalls",
+     "id": "five-common-pitfalls"
+    }
+   ],
+   "sections": [
+    {
+     "id": "patterns-that-repeat",
+     "heading": "Patterns that repeat",
+     "text": "Most of the mistakes new Product Owners make are not unique to any one company or team. The same handful of patterns show up again and again, and recognising them early is often more useful than memorising any single framework."
+    },
+    {
+     "id": "five-common-pitfalls",
+     "heading": "Five common pitfalls",
+     "text": "The most common starting point is building solutions before understanding the problem: jumping to features without validating what customers actually need, or spending too little time on research and evidence before committing to a direction. The useful corrective is to fall in love with the problem rather than the solution. Closely related is prioritising by opinion rather than value, saying yes to whoever is loudest or most senior rather than weighing customer value, business impact, effort and strategic fit against each other, usually because no clear prioritisation framework or product goal exists to settle the argument instead. A third pattern is treating the backlog as a to-do list: filling it with every request that comes in and rarely removing anything, until it holds hundreds of low-value items kept \"just in case.\" A healthy backlog is curated and regularly refined, not just accumulated. Fourth, and echoing From Output to Outcome , is focusing on output rather than outcome: measuring success by how many features shipped rather than asking what customer or business change was meant to happen, and how the team would know if it had. Fifth is working in isolation, writing requirements alone and handing them to developers rather than involving engineers, designers, stakeholders and customers early enough that the product benefits from their input rather than just their execution."
+    },
+    {
+     "id": "other-mistakes-by-category",
+     "heading": "Other mistakes by category",
+     "text": "Beyond these five, most other common mistakes cluster into the same handful of underlying categories. Under understanding sit things like confusing what a customer asks for with what they actually need, or skipping discovery and moving straight to delivery without checking the opportunity is worth pursuing. Under direction sits the absence of a clear product vision, which leaves a team unable to make good calls on its own. Under decision-making sit habits like changing priorities too often for a team to finish anything, or applying frameworks such as OKRs or the Kano model mechanically rather than understanding the thinking behind them. Under collaboration sit weak stakeholder communication and treating developers as a feature factory rather than partners. And under learning sit the failure to validate assumptions before building, ignoring usage data and feedback in favour of intuition, and assuming the job ends at release rather than continuing to monitor and adapt afterward."
+    },
+    {
+     "id": "a-short-checklist",
+     "heading": "A short checklist",
+     "text": "Taken together, the five original pitfalls are worth keeping as a short checklist: solve the right problem, prioritise for value, keep the backlog healthy, measure outcomes rather than output, and collaborate continuously."
     }
    ]
   }
