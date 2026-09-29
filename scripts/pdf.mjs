@@ -136,7 +136,7 @@ if (useLocalShared) {
 }
 
 const footer = `
-  <div style="width:100%; padding:0 18mm; font-family: Nunito, Helvetica, Arial, sans-serif; font-size:7.5pt; color:#5c5c5c; display:flex; justify-content:space-between;">
+  <div style="width:100%; padding:0 18mm 14mm; font-family: Nunito, Helvetica, Arial, sans-serif; font-size:7.5pt; color:#5c5c5c; display:flex; justify-content:space-between;">
     <span>© Simon Sablowski &amp; Giuseppe De Simone · resources.simsab.net</span>
     <span><span class="pageNumber"></span>/<span class="totalPages"></span></span>
   </div>`;

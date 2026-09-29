@@ -602,7 +602,7 @@ mark {
 
 @page {
   size: A4;
-  margin: 16mm 0 18mm;
+  margin: 16mm 0 30mm;
 }
 
 @page :first {
@@ -639,7 +639,7 @@ mark {
   }
 
   .hero .badges {
-    margin-top: 6mm;
+    display: none;
   }
 
   .hero-bar,
