@@ -214,6 +214,80 @@
   margin: 0 auto;
 }
 
+/* Plain lists and tables inside resource text */
+.prose > ul:not([class]),
+.prose > ol:not([class]) {
+  margin: var(--space-base) 0 0;
+  padding-left: var(--space-lg);
+}
+
+.prose > ul:not([class]) li + li,
+.prose > ol:not([class]) li + li {
+  margin-top: var(--space-xs);
+}
+
+.prose > ul:not([class]) + p,
+.prose > ol:not([class]) + p,
+.prose .table-wrap + p {
+  margin-top: var(--space-base);
+}
+
+.prose .table-wrap {
+  margin: var(--space-lg) 0;
+  overflow-x: auto;
+}
+
+.prose-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: var(--font-size-sm);
+  line-height: 1.5;
+}
+
+.prose-table caption {
+  text-align: left;
+  font-weight: 600;
+  padding-bottom: var(--space-sm);
+}
+
+.prose-table th,
+.prose-table td {
+  text-align: left;
+  vertical-align: top;
+  padding: var(--space-sm) var(--space-base);
+  border-top: 1px solid var(--color-border);
+}
+
+.prose-table thead th {
+  border-top: 0;
+  border-bottom: 2px solid var(--color-border);
+}
+
+.prose-table tbody th {
+  white-space: nowrap;
+  color: var(--color-text);
+}
+
+.prose-table .table-sub {
+  display: block;
+  font-weight: 400;
+  color: var(--color-text-light);
+  font-size: 0.875em;
+}
+
+.prose-table ul {
+  margin: 0;
+  padding-left: 1.1em;
+}
+
+.prose-table li + li {
+  margin-top: 0.25em;
+}
+
+@media print {
+  .prose-table tr { break-inside: avoid; }
+}
+
 .reading-list {
   margin: 0;
   padding-left: var(--space-lg);

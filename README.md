@@ -39,6 +39,8 @@ Current collections:
   Meetings That Move Work Forward*, grouped by module.
 - `product-ownership`: ten resources and twelve printable templates for
   *Product Ownership: Deciding What to Build and Why*, grouped by module.
+- `coaching-skills`: ten resources for *From Telling to Asking: Coaching
+  Skills for Leaders*, grouped by module.
 
 ## Shared styling with the course site
 

@@ -1,6 +1,11 @@
 {
  "collections": [
   {
+   "slug": "coaching-skills",
+   "title": "From Telling to Asking: Coaching Skills for Leaders",
+   "url": "/coaching-skills/"
+  },
+  {
    "slug": "coordination-collaboration-ai",
    "title": "Leading Coordination and Collaboration in AI-Accelerated Organisations",
    "url": "/coordination-collaboration-ai/"
@@ -17,6 +22,585 @@
   }
  ],
  "resources": [
+  {
+   "collection": "coaching-skills",
+   "collectionTitle": "From Telling to Asking: Coaching Skills for Leaders",
+   "number": "01",
+   "module": 1,
+   "moduleTitle": "The Coaching Role",
+   "title": "What Is Coaching?",
+   "url": "/coaching-skills/what-is-coaching",
+   "pdf": "/coaching-skills/pdf/what-is-coaching.pdf",
+   "summary": "Coaching as a way of helping people see their situation more clearly and find their own way forward, and the skills a coach keeps developing over time.",
+   "tags": [
+    "Coaching"
+   ],
+   "readingTime": 2,
+   "concepts": [
+    {
+     "name": "Coaching",
+     "id": "the-purpose-of-coaching"
+    }
+   ],
+   "sections": [
+    {
+     "id": "the-purpose-of-coaching",
+     "heading": "The purpose of coaching",
+     "text": "Coaching supports individuals or teams to work better by helping them see their situation more clearly and change the habits, patterns and roles that hold them back. It is more than a toolbox or a set of techniques. It is also a way of acting, and that is usually harder to develop than knowledge about any particular subject. Unlike teaching or advising, coaching happens in the context of the coachee, who does the larger part of the work. The coach does not hand over answers. The coachee finds answers that fit their own situation. This is also why coaching is such an important part of learning: it helps people take something they understand in general and apply it in their own context and environment."
+    },
+    {
+     "id": "how-coaches-develop",
+     "heading": "How coaches develop",
+     "text": "By coaching and by observing others coach, you build up your own collection of patterns and tools. A new coach relies on written material and the support of others. An experienced coach can quickly form and test hypotheses, pick the right tool for the situation and apply it. To become a good coach, you need to learn to observe and listen, to keep your own biases under control, to avoid jumping to premature conclusions, and to communicate well. All of this affects how aware you are of yourself, how you react to other people and how others perceive you. It is one of the reasons coaches value feedback and supervision from other coaches."
+    },
+    {
+     "id": "a-soft-skill-with-a-structure",
+     "heading": "A soft skill with a structure",
+     "text": "Coaching is a soft skill, but a structured one, and a coaching engagement often stretches over months or even years. This makes it possible to define good practices, such as the coaching structure described later in this collection, that help a coach work deliberately rather than by instinct alone. Coaching is not a matter of walking into an organisation, talking to a few people, running a workshop and expecting everything to change. It includes different types of activity, which the resource on coaching stances describes. To sharpen the picture of what coaching is, it also helps to compare it with other well-known kinds of coaching."
+    },
+    {
+     "id": "further-reading",
+     "heading": "Further reading",
+     "text": "Kimsey-House, H., Kimsey-House, K., Sandahl, P. and Whitworth, L.: Co-Active Coaching. A widely used introduction to coaching skills, from listening to powerful questions. Whitmore, J.: Coaching for Performance. A practical introduction to coaching in organisations and the origin of the GROW model."
+    }
+   ]
+  },
+  {
+   "collection": "coaching-skills",
+   "collectionTitle": "From Telling to Asking: Coaching Skills for Leaders",
+   "number": "02",
+   "module": 1,
+   "moduleTitle": "The Coaching Role",
+   "title": "Other Kinds of Coaching",
+   "url": "/coaching-skills/other-kinds-of-coaching",
+   "pdf": "/coaching-skills/pdf/other-kinds-of-coaching.pdf",
+   "summary": "How coaching in organisations compares with systemic coaching and sports coaching, and what each one contributes to the way a workplace coach works.",
+   "tags": [
+    "Coaching"
+   ],
+   "readingTime": 2,
+   "concepts": [
+    {
+     "name": "Systemic coaching",
+     "id": "systemic-coaching"
+    },
+    {
+     "name": "Sports coaching",
+     "id": "sports-coaching"
+    }
+   ],
+   "sections": [
+    {
+     "id": "three-kinds-of-coaching",
+     "heading": "Three kinds of coaching",
+     "text": "Two other prominent kinds of coaching are systemic coaching and sports coaching. Coaching in organisations, whether by a leader, an internal coach or an external coach, borrows from both. There are similarities between all three, but also clear differences."
+    },
+    {
+     "id": "systemic-coaching",
+     "heading": "Systemic coaching",
+     "text": "A systemic coach works with the system. The information, interpretations, goals and actions all come from the coachee, and the coach facilitates discovery through conversation. They ask neutral, open-ended questions related to keywords that come up in the discussion, for example: \"Tell me more about your time there?\" or \"How did the others react to this piece of news?\" Coaching in organisations borrows a lot from systemic coaching. The difference is that a systemic coach does not steer, while a coach inside an organisation usually works towards a goal agreed with a sponsor, for example helping a team collaborate better or make decisions faster. Both usually have a sponsor and have been engaged to achieve something. A systemic coach, however, tries not to bring their own thoughts and ideas into the conversation, while a workplace coach may role-model new behaviour and introduce new practices."
+    },
+    {
+     "id": "sports-coaching",
+     "heading": "Sports coaching",
+     "text": "A workplace coach also works in some ways like a sports coach . Like sports coaches, many workplace coaches gained practical experience in their field before they started coaching, and both should work towards a clear goal. However, workplace coaches are often given something vague to work on, such as \"My team isn't meeting its goals\". To work effectively, they first need to observe the situation or assess it quickly, form some hypotheses and agree the goal with their sponsor. Sports coaches, in contrast, set goals and targets for their team and are much more directive, which can include removing players who do not perform."
+    },
+    {
+     "id": "what-this-means-for-your-own-coaching",
+     "heading": "What this means for your own coaching",
+     "text": "Experienced coaches are aware of these differences and move between them deliberately. They take the neutral, open questioning of systemic coaching as their default, and they borrow the clarity of goals from sports coaching. Coaching in an organisation also requires activities other than coaching, such as teaching or advising. The resource on coaching stances describes them."
+    }
+   ]
+  },
+  {
+   "collection": "coaching-skills",
+   "collectionTitle": "From Telling to Asking: Coaching Skills for Leaders",
+   "number": "03",
+   "module": 1,
+   "moduleTitle": "The Coaching Role",
+   "title": "Coaching Stances",
+   "url": "/coaching-skills/coaching-stances",
+   "pdf": "/coaching-skills/pdf/coaching-stances.pdf",
+   "summary": "The five stances a coach moves between: coaching, teaching, mentoring, advising and role-modelling, and how to return to the coaching stance.",
+   "tags": [
+    "Coaching",
+    "Communication"
+   ],
+   "readingTime": 4,
+   "concepts": [
+    {
+     "name": "Coaching stances",
+     "id": "five-stances"
+    }
+   ],
+   "sections": [
+    {
+     "id": "five-stances",
+     "heading": "Five stances",
+     "text": "Coaching someone at work usually involves more than coaching in the narrow sense. A coach moves between five stances, and it helps to know at any moment which one you are in. Coaching is the most neutral stance, where you are not trying to push your ideas onto the other person or team. It is your default stance, your \"home base\", where you start and end every coaching interaction. From here you can step into any of the four stances below. Stepping back into coaching as soon as the situation allows helps you stay unbiased. Activities in the coaching stance include listening, observing, challenging the status quo, questioning assumptions and facilitating. Teaching helps when you notice a lack of knowledge, often during a coaching conversation. Besides explaining concepts and answering questions, you need to check that the knowledge has actually been acquired. Find your way back to the coaching stance as soon as possible with questions like \"How do you think this new knowledge will affect what you do next?\" or \"What would be the best thing to do now?\" Mentoring is passing on experience to someone who already has some knowledge but lacks experience. It is often confused with coaching, possibly because a good mentor also needs to be a good listener and coach. A coach might mentor a less experienced coach, a new team lead or a facilitator. Mentoring includes storytelling, demonstrating, questioning, working side by side and pairing. Again, return to your home base afterwards, for example with \"That was the story I wanted to tell. What thoughts does it give you?\" or \"Now that we have done this together, let me see you do it on your own.\" Advising reflects the fact that coaches have experience that people want to access. This stance conflicts with coaching, because it shifts some responsibility to you as the advisor, and your experience may not fit the other person's context. Coaches often answer \"It depends\" and then explain the relevant theory (teaching), help the person find their own answer (coaching) or give enriching examples (mentoring). The best thing to do in this stance is to offer two or three options and let the other person decide. To return to coaching, you might ask \"Could it be a possibility for you to …?\" or say \"Another approach you could explore is …\". Role-modelling helps people understand what a behaviour looks like in practice. You may use this stance less often than the others, but it increases your credibility as a coach: you cannot say one thing and do another. Living the values you ask others to adopt, such as integrity, transparency, honesty and a commitment to help people grow, is one of the best ways to be in this stance. You might also facilitate a few meetings yourself and gradually hand this over to the people you coach."
+    },
+    {
+     "id": "knowing-which-stance-you-are-in",
+     "heading": "Knowing which stance you are in",
+     "text": "Teaching or advising can feel easier or faster, but they rarely lead to the same level of learning. So be aware of which stance you are taking at any given moment. You will change stances regularly as the situation requires, and each stance needs a different approach. Remember that as a coach you are there to help people and teams improve how they work, not to take over their work. When you position yourself inside the system, it becomes difficult to stay objective. Unless you happen to be a recognised expert in their field, the people you coach probably understand their work and their customers better than you do."
+    },
+    {
+     "id": "practice",
+     "heading": "Practice",
+     "text": "Self-reflection. Think of situations where you have used coaching skills. Which stance were you in, and when did you switch? Identify one area you would like to improve. If you can, discuss your reflections with a colleague who is also developing their coaching skills. Situations away from coaching. Think of at least three situations in which you typically act from a stance other than coaching. For each one, describe the situation, how you could act from the coaching stance instead, how you could switch back to coaching, and which questions you would ask. Coaching dojo. Practise stance changes in a coaching dojo . The observers watch for transitions between stances and what triggered them, and whether the coach found a way back to coaching."
+    }
+   ]
+  },
+  {
+   "collection": "coaching-skills",
+   "collectionTitle": "From Telling to Asking: Coaching Skills for Leaders",
+   "number": "04",
+   "module": 2,
+   "moduleTitle": "Listening and Asking",
+   "title": "Curiosity and Keywords",
+   "url": "/coaching-skills/curiosity-and-keywords",
+   "pdf": "/coaching-skills/pdf/curiosity-and-keywords.pdf",
+   "summary": "Why genuine curiosity about the other person is the basis of coaching, how to listen for keywords, and when to stop digging deeper.",
+   "tags": [
+    "Coaching",
+    "Listening",
+    "Questions"
+   ],
+   "readingTime": 3,
+   "concepts": [
+    {
+     "name": "Keywords",
+     "id": "keywords"
+    },
+    {
+     "name": "Five whys",
+     "id": "knowing-when-to-stop"
+    }
+   ],
+   "sections": [
+    {
+     "id": "curiosity",
+     "heading": "Curiosity",
+     "text": "Successful communication in any context, between peers, within a hierarchy, or between a coach and a coachee, requires active participation from everyone involved. A coachee may be genuinely interested in improving their situation, but they need the coach's active interest and skill to find a way to do it. An interest in people is one of the fundamental qualities a coach needs, both to do the job well and to enjoy it. Without genuine curiosity about the person in front of you and their way of thinking, it is difficult to listen with interest and to understand a situation that affects them. Several things can stop us from following our curiosity, and most of them are rooted in fear or false assumptions. We may fear that asking too many questions makes us look inexperienced or uninformed. Some preparation is needed in a coaching situation, but we are not the expert on another person's personal or professional situation. They are. Asking questions to build understanding is natural. Taking notes of important points, so that we do not stumble over uncertainties or repeat topics, shows interest and engagement. Curiosity is the key that opens up a deeper and more useful conversation."
+    },
+    {
+     "id": "keywords",
+     "heading": "Keywords",
+     "text": "Keywords are a tool for gaining better insight into how someone thinks. By noting words or patterns of speech that come up often in a person's story, we can identify topics or ideas that matter to them and deserve a closer look. Writing keywords down can be part of ongoing note-taking, to highlight recurring themes and to lead to further questions. Themes, situations and keywords may recur within and across contexts, but that does not mean the same solution applies. A keyword may open the door to a topic, but it is up to us to walk through it and discover the causes and effects behind it. A simple note-taking technique helps: draw a vertical line down the page and write keywords and observations on the left, and your own thoughts and hypotheses on the right. Underline or box keywords that come up repeatedly. This keeps what the person said separate from what you think about it."
+    },
+    {
+     "id": "knowing-when-to-stop",
+     "heading": "Knowing when to stop",
+     "text": "Past a certain point, asking questions and uncovering underlying themes becomes less helpful. Curiosity is useful, but curb it before digging too deep. If the questioning goes on too long, it can cause confusion and even discomfort, and the coachee may feel that they are not giving satisfying answers. The \"five whys\" technique is a useful guide: digging down about five layers is usually enough to find a root cause. Do not take anything for granted. Let your curiosity guide you towards a deeper understanding of the other person's situation. Ask questions, write down keywords, notice how comfortable they are, and steer the conversation towards topics that are relevant to them."
+    },
+    {
+     "id": "practice",
+     "heading": "Practice",
+     "text": "Questions from keywords. Pair up with a colleague. Ask them to tell you about a situation from their day, for example how they prepared for work this morning. Write down keywords as you hear them, and mark the ones that repeat. Then ask about them, starting with the most frequent or notable ones. Aim for neutral clarifying questions such as \"Tell me more about …\", \"What do you mean when you say …?\", \"What was the impact of …?\" or \"Why do you think they acted that way?\" Afterwards, reflect on what the technique showed you."
+    }
+   ]
+  },
+  {
+   "collection": "coaching-skills",
+   "collectionTitle": "From Telling to Asking: Coaching Skills for Leaders",
+   "number": "05",
+   "module": 2,
+   "moduleTitle": "Listening and Asking",
+   "title": "Listening and Responding",
+   "url": "/coaching-skills/listening-and-responding",
+   "pdf": "/coaching-skills/pdf/listening-and-responding.pdf",
+   "summary": "Communication enablers, the three levels of listening, the three phases of active listening, and the difference between shift and support responses.",
+   "tags": [
+    "Listening",
+    "Communication"
+   ],
+   "readingTime": 6,
+   "concepts": [
+    {
+     "name": "Communication enablers",
+     "id": "communication-enablers"
+    },
+    {
+     "name": "Levels of listening",
+     "id": "levels-of-listening"
+    },
+    {
+     "name": "Active listening",
+     "id": "active-listening"
+    },
+    {
+     "name": "Shift and support responses",
+     "id": "shift-and-support-responses"
+    }
+   ],
+   "sections": [
+    {
+     "id": "why-listening-needs-practice",
+     "heading": "Why listening needs practice",
+     "text": "Even while we listen to someone, our brain is busy: it reflects on the words, ties them to our own experience and studies the other person's manner. It is easy to get distracted by our own thoughts, even when we are trying to focus. In everyday conversations this is natural. In a coaching conversation, however, we want to stay with what the other person is telling us. Coaches use several listening techniques and models for this. Here are a few that we find helpful."
+    },
+    {
+     "id": "communication-enablers",
+     "heading": "Communication enablers",
+     "text": "A first step towards communicating effectively is becoming aware of what makes communication possible in the first place. Anyone who has travelled to another country knows that a shared language is one of the basic enablers. Without it, communication is reduced to very simple things or seems impossible. Enablers range from general factors that are hard to change in the moment, such as the lack of a common language, cultural differences or unexamined prejudice, to situational factors that we can adjust. Creating an environment that enables communication can involve any of the following: Managing emotional states. Manage your own emotional state and understand that of the other person. Someone who has had a bad day, lacks sleep or has a headache will find it harder to organise their thoughts and communicate clearly. Recognising your biases. Stop yourself from jumping to premature conclusions. Resist the temptation to impose your own ideas or advice, and work on staying neutral and objective. Openness and honesty. Approach the conversation without taking anything for granted, accept different perspectives, entertain several hypotheses and make an effort to test them. A distraction-free environment. A noisy room, movement outside or messages on your phone pull your attention away. Create a space where these cannot interfere. A wide communication channel. Make sure the conversation can include facial expressions, body language and tone of voice, not only words. Compare how much a text message conveys with a face-to-face conversation."
+    },
+    {
+     "id": "levels-of-listening",
+     "heading": "Levels of listening",
+     "text": "Listening can take different forms, some more suitable for coaching than others. The authors of Co-Active Coaching describe three levels of listening, which roughly correspond to \"me\", \"you\" and \"us\". Level I: internal listening (me). We filter what is being said through our own memories and experiences. We may be reminded of similar situations and tempted to shift the topic to our own experience. Listening at this level can occasionally bring up new information or break the ice, but it is generally less helpful in coaching. Level II: focused listening (you). All our attention is on the other person, as if we were studying them. We aim to take in everything they convey, including tone of voice, body language and emotions, to the exclusion of what is around us. Level II listening helps us learn more about the person in the moment and reflect what we receive back to them. It also lets us listen again for their reaction to our response. Level III: global listening (us). We take in what the speaker conveys and the environment around us, using all our senses. We notice things beyond what we immediately receive, including our own intuition, which we treat as further information to reflect back. As at Level II, we listen for the reaction to our response, but more broadly: Level III lets us read the room, understand our impact and adjust our behaviour."
+    },
+    {
+     "id": "active-listening",
+     "heading": "Active listening",
+     "text": "Active listening happens at Levels II and III and requires full concentration on what is said and how it is said, through body language, intonation and behaviour. It has three phases. Comprehending means understanding not only words and sentences but also their context. Cultural context, quirks of language and tone of voice all help us tell the difference between, for example, a sarcastic remark and a sincere one. Retaining means holding on to what is being conveyed. Here, loss of focus and the limits of our short-term memory work against us. A conversation has no rewind button, so information gets lost and important points are not always recognised straight away. Taking notes and listening for keywords help us retain information and come back to it. We can also ask for a short pause to write down and organise what we have heard. Responding includes verbal and non-verbal responses. Responding builds rapport and trust, which is another communication enabler, and it improves our understanding when we summarise or paraphrase what we have heard. We may add our own reflections, not to impose an opinion but to reflect back what we have observed and understood. This can support the speaker or contradict them to move the conversation forward. Active listening is an interaction between both sides of the conversation."
+    },
+    {
+     "id": "shift-and-support-responses",
+     "heading": "Shift and support responses",
+     "text": "Different responses serve different purposes. In coaching, there is one type we want to use most and another we tend to avoid. A shift response moves the topic from what the speaker is saying to another subject. It often happens when the listener is focused less on the speaker and more on finding a gap to bring in their own ideas. It can come across as rude and leave the speaker feeling unheard. In coaching it is usually avoided, although it can be useful when a conversation is going round in circles and needs a new direction. A support response follows the speaker and keeps the conversation flowing without driving it. It relies on empathy and understanding and keeps the relationship positive. The speaker stays at the centre while the listener clarifies, understands and empathises, for example by asking for more detail, how a situation made them feel or what came of it. Listening and responding can both be refined, to create an environment in which the other person feels free to speak openly."
+    },
+    {
+     "id": "practice",
+     "heading": "Practice",
+     "text": "Level I and Level II. Ask a partner to tell you about a trip they took, including what went well and what did not. For ten minutes, listen at Level I: interpret the story in terms of your own experience and comment often with your opinion. Then listen to the same story for ten minutes at Level II: be curious, ask questions, clarify and notice your partner's values. Afterwards, tell each other what it was like to listen and to be listened to at each level. Levels of listening at work. After your conversations for a week, give yourself a score from 1 to 10 for how much you listened at Level I, II and III. What do you notice about the other person's ability to solve their own problems when you listen at each level? Global listening. The next time you are in a busy place, such as a café, a station or an office, listen at Level III. How are people feeling? Where is the energy, and how does it shift? Then try it with your eyes closed. What do you notice that you did not notice before?"
+    },
+    {
+     "id": "further-reading",
+     "heading": "Further reading",
+     "text": "Kimsey-House, H., Kimsey-House, K., Sandahl, P. and Whitworth, L.: Co-Active Coaching. The source of the three levels of listening."
+    }
+   ]
+  },
+  {
+   "collection": "coaching-skills",
+   "collectionTitle": "From Telling to Asking: Coaching Skills for Leaders",
+   "number": "06",
+   "module": 2,
+   "moduleTitle": "Listening and Asking",
+   "title": "Powerful Questions",
+   "url": "/coaching-skills/powerful-questions",
+   "pdf": "/coaching-skills/pdf/powerful-questions.pdf",
+   "summary": "What makes a question powerful, its characteristics and goals, and how Karl Tomm's model of past and future, linear and circular questions helps you create them.",
+   "tags": [
+    "Questions",
+    "Coaching"
+   ],
+   "readingTime": 6,
+   "concepts": [
+    {
+     "name": "Powerful questions",
+     "id": "characteristics-of-a-powerful-question"
+    },
+    {
+     "name": "Karl Tomm's model",
+     "id": "karl-tomms-model"
+    },
+    {
+     "name": "Miracle question",
+     "id": "circular-future-oriented-questions"
+    }
+   ],
+   "sections": [
+    {
+     "id": "what-makes-a-question-powerful",
+     "heading": "What makes a question powerful",
+     "text": "A powerful question is not an everyday question that we answer from a script (\"How are you?\" \"Fine, thanks!\"). It makes us stop and think, and consider answers we would not otherwise have given. Powerful questions show engagement with the subject, provoke creative thinking and open up conversation. As a coaching tool, they reflect the coach's engagement with and understanding of the coachee's perspective, and they prompt the coachee to reflect on their own views and patterns. A powerful question moves everyone in the conversation towards clarity, re-evaluation and new solutions."
+    },
+    {
+     "id": "characteristics-of-a-powerful-question",
+     "heading": "Characteristics of a powerful question",
+     "text": "A powerful question broadens perspective and allows possibilities to be explored and insights to be generated. It also confirms a relationship of understanding and active listening between the person asking and the person answering. The goals of powerful questions focus on the person receiving them: to open a dialogue, to prompt reflection and insight, to challenge assumptions, and to move towards action. A powerful question is the starting point of a conversation whose purpose should be clear beforehand. A conversation with several purposes is diluted and less productive, so a powerful question must fit the purpose of the conversation first of all. It tends to have some or all of these characteristics: it is a short, precise, single question; it is open and does not look for a \"yes\" or \"no\"; it contains no assumptions; and it does not imply that a particular answer is correct."
+    },
+    {
+     "id": "karl-tomms-model",
+     "heading": "Karl Tomm's model",
+     "text": "Many approaches exist for creating powerful questions. The Canadian psychiatrist Karl Tomm developed a model of interventive questions that is a useful guide. Rooted in systemic theory, it assumes that perspectives differ widely in any situation. It helps to discover an individual's or a team's perspective by asking questions along two dimensions: time (past or future) and understanding (linear, one reality, or circular, many realities). Powerful questions can come from all four quadrants. Questions along the time axis look at past situations and at the future. It is like driving a car: most of the time you look ahead through the windscreen, but now and then you check the mirror to see what is behind you. Linear past-oriented questions work like a detective , building a timeline and an overview of what happened: \"What happened when you shared that feedback?\", \"What triggered that event?\", \"Was it the customer or someone inside the company?\" Circular past-oriented questions work like an anthropologist , seeking to understand intentions and motivations: \"From which point of view could their action make sense?\", \"Could it be that they knew something the rest of you did not? What could it be?\", \"Do you think they saw this as a problem at all?\" Circular future-oriented questions work like a scientist , forming hypotheses and exploring scenarios: \"What could you do to make things better?\", \"Is there something you could do to prevent this in the future?\", \"Can you see a possible solution?\" They also include \"miracle questions\" that explore an alternative to the current situation: \"If you come to work tomorrow and the problem has disappeared, how would you notice?\" or \"When you look back on this period one day, which decisions made the difference?\" Future-oriented circular questions can feel speculative or uncomfortable, but they help people step away from the constraints of the current situation, see new paths and notice the first steps that may already be in place. Linear future-oriented questions work like a captain , defining the next steps: \"What is the first thing you are going to do now?\", \"Who do you need to talk to in order to move this forward?\", \"How can they help you?\", \"How will I know that you have achieved this?\" Most conversations use questions from all four quadrants. The order depends on the flow of the conversation and the coach's intuition, although moving from detective to anthropologist to scientist to captain is a useful default."
+    },
+    {
+     "id": "when-to-ask-powerful-questions",
+     "heading": "When to ask powerful questions",
+     "text": "Powerful questions can be thought-provoking and even a call to action, but they also convey understanding without judgement. The aim is to spark creative thinking and new ideas. Sometimes that means challenging existing perceptions and, through new insight, changing direction. Consider the purpose of the conversation first and design your questions around it. A conversation with an individual or a team can serve many goals: understanding the details of an issue, exploring different perspectives, solving a problem or generating ideas. For focus and clarity, limit each conversation to one purpose, and take other purposes to separate conversations with their own opening questions."
+    },
+    {
+     "id": "practice",
+     "heading": "Practice",
+     "text": "Creating powerful questions. Imagine a team meeting in which you want the team to reflect on how they work together. Write down questions that could inspire creative thinking, then check them against the characteristics above. How many do they meet? How could you improve the others? Using the model. In your next conversation about a problem, work through the model deliberately. First ask detective questions to understand the situation, then anthropologist questions to understand possible causes, then scientist questions to explore possible solutions, and finally captain questions to agree concrete actions. The following examples show the kind of questions that belong in each quadrant. Sample questions for each quadrant of Karl Tomm's model Role Sample questions Detective Linear, past What is the problem? What are the team members doing? In what way is this a problem for you? Is this happening in specific situations? What would you do in a situation like that? Anthropologist Circular, past What do you think the team members' opinions are in situations like these? What do you think the reason is for their course of action? Let us assume their actions make sense to them, and are not a sign of laziness. What do you think they are trying to tell you? Scientist Circular, future What do you think the team believes is the solution to this problem? Imagine you have solved this problem in a good way. What characterises the solution? If the team started taking on more responsibility, what would they do? What would that enable you to do? Captain Linear, future How long will you allow this problem to continue? Could you speak with them about which concrete areas of responsibility they are willing to commit to? Do you think the team would take on more responsibility if you gave fewer instructions? We have talked about different possible solutions. What are the concrete actions you can take next? Coaching dojo. Practise in a coaching dojo , with the observers listening for powerful questions, the keywords that triggered them, and other questions that could have been asked."
+    },
+    {
+     "id": "further-reading",
+     "heading": "Further reading",
+     "text": "Tomm, K.: \"Interventive Interviewing, Part III: Intending to Ask Lineal, Circular, Strategic, or Reflexive Questions?\" Family Process, 1988. The original description of the model. Kimsey-House, H., Kimsey-House, K., Sandahl, P. and Whitworth, L.: Co-Active Coaching. Includes an extensive list of powerful questions grouped by intention."
+    }
+   ]
+  },
+  {
+   "collection": "coaching-skills",
+   "collectionTitle": "From Telling to Asking: Coaching Skills for Leaders",
+   "number": "07",
+   "module": 3,
+   "moduleTitle": "Observing",
+   "title": "Making Observations",
+   "url": "/coaching-skills/making-observations",
+   "pdf": "/coaching-skills/pdf/making-observations.pdf",
+   "summary": "Why observation is the basis of coaching, the Gemba Walk, what to observe, a list of questions to observe with, and reinforcing and deepening observations.",
+   "tags": [
+    "Observation",
+    "Coaching"
+   ],
+   "readingTime": 4,
+   "concepts": [
+    {
+     "name": "Gemba Walk",
+     "id": "the-gemba-walk"
+    },
+    {
+     "name": "Observation list",
+     "id": "observing-with-questions"
+    },
+    {
+     "name": "Reinforcing and deepening observations",
+     "id": "reinforcing-and-deepening-observations"
+    }
+   ],
+   "sections": [
+    {
+     "id": "why-observation-matters",
+     "heading": "Why observation matters",
+     "text": "Making observations is a crucial activity for coaches, leaders and managers. Observations help us understand what is happening and find ways to improve."
+    },
+    {
+     "id": "the-gemba-walk",
+     "heading": "The Gemba Walk",
+     "text": "The Gemba Walk is a continuous improvement practice from Lean management, in which observing in person and in real time is a core principle. Its purpose is to let managers and leaders see the actual work, engage with the people doing it, learn about the process and explore opportunities for improvement. Only by observing with our own senses can we correctly identify what is happening. The Gemba Walk also emphasises observing work where it actually happens, to learn about the work environment and the relationships in it by interacting with the people and processes involved. Coaches can follow the same principles. We need to stay aware that our presence alone influences the system, which requires self-awareness, social awareness and, at times, restraint. It is usually better not to share your observations immediately, but to let group dynamics follow their natural course, even when a group seems to drift away from its task. People may find their way back on their own, and that becomes a longer-lasting learning experience."
+    },
+    {
+     "id": "what-to-observe",
+     "heading": "What to observe",
+     "text": "The goal of observation is to describe and explain what is happening around us. There are two main points of focus, which interact and sometimes overlap. First, we observe objective facts about everything that is happening. Taiichi Ohno, founder of the Toyota Production System, compared gathering facts to a forensic scientist investigating a crime scene, building a clear picture of what happened. Data, by contrast, is a step removed from the process. Ohno wrote: \"Data is of course important in manufacturing, but I place the greatest emphasis on facts.\" Second, the facts we collect lead to interpretations and to patterns, in which we record the dynamics and interactions between people, processes and the environment."
+    },
+    {
+     "id": "observing-with-questions",
+     "heading": "Observing with questions",
+     "text": "Coach Lyssa Adkins suggests keeping a running list of questions in your head while you observe a team, whether the whole team or a few members are interacting. Questions like these help you focus on the quality of the interactions: Is everyone who wants to talk getting airtime? Are there quiet voices that want to be heard? Is the team moving towards its goal in an efficient and effective way? Is the team getting tired? Do people seem overloaded? How does the behaviour of individuals affect others in the team? Is there tension between team members? Is there energy in the room? Are they taking on as much as they could, or do they still have some slack? Are they stuck? Do they need a new perspective that opens up more possibilities? Keep your list at hand and add questions that are relevant to your context."
+    },
+    {
+     "id": "reinforcing-and-deepening-observations",
+     "heading": "Reinforcing and deepening observations",
+     "text": "Observations are not for keeping to ourselves. They are valuable feedback and a fresh perspective for the people we observe. At some point we share them, to move towards goals and improvements. Lyssa Adkins distinguishes two kinds of observation to share. Reinforcing observations highlight opportunities taken or missed, situations where improvement may be needed, or progress that has been made. They are direct feedback and give the person or team direction, for example \"This was well done\" or \"You missed a chance here\". Deepening observations try to reveal underlying patterns or dynamics. They are not always accurate and mainly serve to encourage reflection and open a conversation. So do not become attached to your deepening observations or to their being right. They might be worded like this: \"Here is what I thought I saw. What did you see?\""
+    },
+    {
+     "id": "observation-as-a-coaching-tool",
+     "heading": "Observation as a coaching tool",
+     "text": "Observation is a skill you will keep refining and adapting. Your observations hold up a mirror, so that people can see things they may not notice while they are busy with the work. They open conversations that deepen your understanding of what guides a team. Being aware of your own biases, and staying humble and empathetic, gives your coaching a solid foundation."
+    },
+    {
+     "id": "practice",
+     "heading": "Practice",
+     "text": "Observation list. Write your own list of questions to observe a team with. For each question, note the assumption behind it and how, if at all, you would share what you observe. Timeline. During a team meeting, draw a horizontal line on a sheet of paper and note observations of behaviour in the order they happen: behaviour that helps the team reach its goal above the line, behaviour that hinders it below, and neutral observations on the line. Afterwards, ask yourself: What surprises you? Which patterns appear? What might have triggered certain behaviour? Then share three helpful behaviours with the team and make one concrete suggestion for improvement. Field trip. In a busy place, such as a hotel lobby, an office or a station, observe the whole environment. Where is the energy? Which groups can you see, and what unites them? Who talks to whom? What conclusions do you draw, and which assumptions are you making?"
+    },
+    {
+     "id": "further-reading",
+     "heading": "Further reading",
+     "text": "Liker, J.: The Toyota Way. The management principles behind the Toyota Production System, including going to see the work where it happens. Ohno, T.: Toyota Production System: Beyond Large-Scale Production. Ohno's own account, including his emphasis on facts over data."
+    }
+   ]
+  },
+  {
+   "collection": "coaching-skills",
+   "collectionTitle": "From Telling to Asking: Coaching Skills for Leaders",
+   "number": "08",
+   "module": 3,
+   "moduleTitle": "Observing",
+   "title": "Observational Pitfalls",
+   "url": "/coaching-skills/observational-pitfalls",
+   "pdf": "/coaching-skills/pdf/observational-pitfalls.pdf",
+   "summary": "The story of Clever Hans, cognitive biases that distort observation, and how to form, test and challenge hypotheses about what you see.",
+   "tags": [
+    "Observation",
+    "Coaching"
+   ],
+   "readingTime": 4,
+   "concepts": [
+    {
+     "name": "Clever Hans",
+     "id": "the-story-of-clever-hans"
+    },
+    {
+     "name": "Observer expectancy effect",
+     "id": "cognitive-biases"
+    },
+    {
+     "name": "Confirmation bias",
+     "id": "creating-hypotheses"
+    }
+   ],
+   "sections": [
+    {
+     "id": "the-story-of-clever-hans",
+     "heading": "The story of Clever Hans",
+     "text": "Observation has pitfalls, especially because we want to include our interpretations of dynamics and patterns, not only objective facts. This makes us vulnerable to cognitive biases. The story of Clever Hans shows how much difference observation can make. Hans was a horse in Germany in the early twentieth century, thought to be intelligent enough to understand spoken language and do basic arithmetic. Asked to add ten and ten, he would tap his hoof twenty times. Psychologists tested him extensively and found that Hans was picking up on the body tension of the person asking and of the crowd around him. He could sense when people expected him to stop tapping. Hans was clever, but not for the reasons people thought. Of everyone present, he was the only one interpreting his observations correctly."
+    },
+    {
+     "id": "cognitive-biases",
+     "heading": "Cognitive biases",
+     "text": "The people studying Clever Hans fell prey to the observer expectancy effect , in which our own ideas and preconceptions lead to particular behaviour in those we observe. In another example, psychologist Robert Rosenthal found that telling teachers that some students had great potential and others did not caused the teachers to behave, unconsciously, in ways that produced those results. Other biases can influence our interpretation or even the outcome of an observation. With the halo and horn effects , one unrelated trait distorts our overall judgement of a person, positively or negatively. With transference and counter-transference , one person's positive or negative traits are projected onto another. Both can affect how we interpret what we see, how we behave around those we observe, and how they behave around us. There are many more such effects. They are largely unconscious, so we may not notice them or be able to counter them. As the case of Clever Hans shows, our presence alone tends to influence what we observe. We need to be aware that these biases exist and find ways to work around them. After recording our observations, the next step is to form plausible hypotheses by asking \"Why is this happening?\" Hypotheses help us explain what we have seen and challenge our assumptions about what we think we are seeing."
+    },
+    {
+     "id": "creating-hypotheses",
+     "heading": "Creating hypotheses",
+     "text": "Hypotheses try to explain why certain behaviour occurs and what it means. Not every observation leads to a clear conclusion, but the aim is to collect enough information to form coherent hypotheses. Observations of practices and processes can reveal misaligned principles and values that are not otherwise visible, and give a starting point for goals. Similarly, observing interactions closely can reveal dynamics between individuals or teams, and behaviour or tensions we may want to address. Even with many observations, we can fall into further traps. Confirmation bias means focusing mainly on observations that confirm our own hypothesis. So we aim to validate, or better, to invalidate our hypotheses, by looking specifically for observations that could disprove them, before we build on them. Hypotheses can change quickly as we observe different situations. Observing, forming hypotheses, testing them and turning them into goals is a cycle. Whenever we find information that contradicts a hypothesis, we start the loop again. This makes observation the foundation of the whole coaching approach . As observers, we need to take ourselves out of the picture and observe with humility, genuine curiosity and patience. To understand someone else's behaviour, we need empathy to put ourselves in their position, especially when we are trying to notice what a person is feeling."
+    },
+    {
+     "id": "challenging-your-own-view",
+     "heading": "Challenging your own view",
+     "text": "Forming hypotheses carefully and trying to invalidate them goes a long way to countering our own assumptions and expectations. But cognitive biases are usually unconscious and can rarely be avoided entirely. That is why help from someone who can challenge our observations is so valuable: it uncovers biases we would not catch on our own. Comparing notes with other coaches and discussing each other's hypotheses works like quality control through peer review. It also helps to seek support from peers when a situation starts to frustrate you. Just as teams get caught in unproductive patterns, we can get stuck in our own negative loop, and a fresh perspective can help us out."
+    },
+    {
+     "id": "practice",
+     "heading": "Practice",
+     "text": "Observations and hypotheses. Capture observations about a challenge you are currently facing. Formulate hypotheses that might explain them, and decide how you could invalidate or validate each one. Then discuss your hypotheses with a colleague. Which other hypotheses can they think of?"
+    },
+    {
+     "id": "further-reading",
+     "heading": "Further reading",
+     "text": "Pfungst, O.: Clever Hans (The Horse of Mr. von Osten). The original study of Clever Hans from 1907. Kahneman, D.: Thinking, Fast and Slow. A thorough introduction to cognitive biases and how they affect judgement."
+    }
+   ]
+  },
+  {
+   "collection": "coaching-skills",
+   "collectionTitle": "From Telling to Asking: Coaching Skills for Leaders",
+   "number": "09",
+   "module": 4,
+   "moduleTitle": "Coaching in Practice",
+   "title": "Coaching Structure",
+   "url": "/coaching-skills/coaching-structure",
+   "pdf": "/coaching-skills/pdf/coaching-structure.pdf",
+   "summary": "A structured coaching approach as a loop of observations, hypotheses, goals, metrics and coaching tools, captured on coaching cards.",
+   "tags": [
+    "Coaching",
+    "Planning"
+   ],
+   "readingTime": 4,
+   "concepts": [
+    {
+     "name": "Coaching cards",
+     "id": "from-observations-to-goals"
+    },
+    {
+     "name": "Behavioural goals",
+     "id": "behavioural-goals"
+    },
+    {
+     "name": "Leading and lagging indicators",
+     "id": "metrics"
+    },
+    {
+     "name": "Coaching tools",
+     "id": "coaching-tools"
+    }
+   ],
+   "sections": [
+    {
+     "id": "from-observations-to-goals",
+     "heading": "From observations to goals",
+     "text": "Making observations and forming hypotheses to explain them is the first step in a structured coaching approach. It shows us where we are, but not where we want to go. So once we have validated our hypotheses, the next step is to set goals we can work towards to improve sustainably. We capture observations, hypotheses, goals, metrics and coaching tools on coaching cards , one card per coaching topic. The cards follow a circular flow that lets us restart the loop and refine or change hypotheses and goals as needed: Everything begins with observations , the basis of the coaching approach. Through hypotheses we try to explain what we have observed. We test them rigorously, so that cognitive biases do not drive our decisions. Validated hypotheses help identify goals , which describe the behaviour we think would help the person or team improve. Metrics are defined immediately after the goals. Finally, we choose coaching tools to get there. Choosing tools last ensures that the metrics measure progress towards the goal, not the actions we take. Throughout the process, further observations show whether we are on track, let us revisit our hypotheses, improve our tools and refine our goals. We move through this loop until the goal is reached."
+    },
+    {
+     "id": "behavioural-goals",
+     "heading": "Behavioural goals",
+     "text": "By defining behavioural goals, a coach aims to encourage behaviour that helps a person or team work better, and to reduce behaviour that holds them back. A few principles often point in the right direction: Identify the core needs of the team and its members. Trust their expertise and enable them to make decisions themselves. Keep it simple. Keep asking what the next most valuable thing is, and do that. Avoid work that adds no value. Teams that organise themselves and use the knowledge of the whole group tend to make better decisions. Support them in doing so. Make time to reflect regularly and find opportunities to improve. To define behavioural goals, imagine a future in which the team has improved and ask what its behaviour would look like. A good goal describes behaviour that both leads to that future and helps maintain it. Goals can be ambitious but should not be too abstract. They should be achievable and relevant to the team's development, and they should not be tied to your own performance targets or those of the team."
+    },
+    {
+     "id": "metrics",
+     "heading": "Metrics",
+     "text": "Metrics show the coach and the team whether change is happening, so they must be measurable. We usually define two kinds. Leading indicators show whether we are heading in the right direction, and how well or how quickly. Any behaviour that is a step towards the goal falls into this category. Lagging indicators tell us when we have reached the goal. Because the coach's main aim is to encourage behaviour that leads to improvement, the metrics usually focus on positive changes in behaviour."
+    },
+    {
+     "id": "coaching-tools",
+     "heading": "Coaching tools",
+     "text": "Any intervention intended to influence behaviour is a coaching tool. Coaching tools generally encourage people to adapt the way they work, which leads to a change in behaviour. The number of possible tools is almost endless, and choosing the right ones is essential to move closer to the goal. Examples include: Team meetings and discussions, such as a regular review of how the team works together, in which the team reflects on how to become more effective and adjusts its behaviour. Small or large changes to established routines, for example changing the order in which people speak in a regular meeting. A coaching conversation with an individual to challenge their thinking, give them new perspectives or shift their mindset."
+    },
+    {
+     "id": "why-structure-helps",
+     "heading": "Why structure helps",
+     "text": "Coaching cards keep us focused through each step of the process. They stop us from quickly applying a tool to a symptom, only to find later that our hypothesis was wrong. They document each stage of coaching in an accessible way, which makes it easy to exchange thoughts, ideas and hypotheses with other coaches and to reflect on our own behaviour. This disciplined approach gives a coach the time to observe, test hypotheses, define meaningful goals, check progress and plan interventions with care."
+    },
+    {
+     "id": "practice",
+     "heading": "Practice",
+     "text": "Your first coaching card. Choose a situation in your own team or organisation. Write down three observations, one or two hypotheses that could explain them, and how you would test those hypotheses. Then formulate one behavioural goal, one leading and one lagging indicator, and two coaching tools you could try."
+    }
+   ]
+  },
+  {
+   "collection": "coaching-skills",
+   "collectionTitle": "From Telling to Asking: Coaching Skills for Leaders",
+   "number": "10",
+   "module": 4,
+   "moduleTitle": "Coaching in Practice",
+   "title": "Coaching Conversations",
+   "url": "/coaching-skills/coaching-conversations",
+   "pdf": "/coaching-skills/pdf/coaching-conversations.pdf",
+   "summary": "How a coaching conversation brings the skills together: agreeing its purpose, exploring, converging on a next step, staying in the coaching stance, and practising in a coaching dojo.",
+   "tags": [
+    "Coaching",
+    "Questions",
+    "Listening"
+   ],
+   "readingTime": 4,
+   "concepts": [
+    {
+     "name": "Divergence and convergence in coaching",
+     "id": "explore-before-you-converge"
+    },
+    {
+     "name": "Positive reframing",
+     "id": "reframe-negative-statements"
+    },
+    {
+     "name": "Coaching dojo",
+     "id": "practise-in-a-coaching-dojo"
+    }
+   ],
+   "sections": [
+    {
+     "id": "what-a-coaching-conversation-is-for",
+     "heading": "What a coaching conversation is for",
+     "text": "A coaching conversation is where the skills from the other resources come together: curiosity, listening, powerful questions and observation. It helps the other person think more clearly about a situation that matters to them and find their own next step. The content belongs to the coachee. The coach is responsible for the process of the conversation. A coaching conversation can be a planned session, but it can also be ten minutes after a meeting or a question in the corridor. What makes it a coaching conversation is not the setting but the stance: the coach helps the other person find their own answer instead of giving one."
+    },
+    {
+     "id": "agree-the-purpose",
+     "heading": "Agree the purpose",
+     "text": "Start by agreeing what the conversation is for. Ask what the other person would like to get out of it, and how much time you have. A conversation with a single, clear purpose is more productive than one that tries to cover everything, so if several topics come up, agree which one to work on now and which ones to take to a separate conversation. Useful opening questions include \"What would you like to talk about?\", \"What would make this conversation useful for you?\" and \"What would you like to have at the end of our time together?\""
+    },
+    {
+     "id": "explore-before-you-converge",
+     "heading": "Explore before you converge",
+     "text": "Most coaching conversations first open up and then narrow down. In the opening, divergent part, the coach helps the coachee explore the situation. Listen at Level II or Level III , write down keywords , use support responses and ask about what seems to matter most. Detective and anthropologist questions from Karl Tomm's model help to understand what happened and how others might see it. Once the situation is clearer, the conversation moves towards options and action. Scientist questions explore possibilities, and captain questions turn them into a concrete next step: \"What will you do first?\", \"Who do you need to involve?\", \"How will you know it has worked?\" Close by checking that the coachee has what they wanted from the conversation. Watch the balance between the two parts. Converging too early leads to solutions for a problem that is not yet understood. Staying open for too long leaves the coachee with more questions than they came with."
+    },
+    {
+     "id": "stay-in-the-coaching-stance",
+     "heading": "Stay in the coaching stance",
+     "text": "During a conversation, it is tempting to step out of the coaching stance, especially into advising or teaching. Sometimes that is right, for example when the coachee lacks information they need. Notice when you switch, and find your way back with a question, such as \"What do you make of that?\" or \"Which of these options fits your situation best?\" The resource on coaching stances describes the stances in detail. Also notice when you are steering the conversation towards a topic that interests you rather than the coachee, or offering advice nobody asked for. Both are signs that you are listening at Level I."
+    },
+    {
+     "id": "reframe-negative-statements",
+     "heading": "Reframe negative statements",
+     "text": "Coachees often describe what they do not want: \"The meetings are a waste of time\" or \"I don't want to be the one who always decides\". It helps to invite them to rephrase these statements in positive terms: \"What would you like the meetings to achieve instead?\" or \"How would you like decisions to be made?\" A positive formulation describes something the coachee can work towards, which makes it much easier to find a next step."
+    },
+    {
+     "id": "practise-in-a-coaching-dojo",
+     "heading": "Practise in a coaching dojo",
+     "text": "A coaching dojo is a safe space to practise and reflect on coaching skills. One person, the coachee, brings a real case they would like support with. A coach uses the opportunity to practise coaching techniques, and one or more observers give feedback afterwards. Because dojos work best with real cases rather than invented ones, they require respectful communication and confidentiality. A dojo needs at least three people. Everyone thinks of a challenge they currently face, and the group chooses one. The problem owner becomes the coachee, and a volunteer becomes the coach. The others observe, with a focus agreed beforehand, for example stance changes, powerful questions or keywords. The coach and coachee have a coaching conversation of about seven minutes. The observers give feedback for about three minutes. What did they notice? What worked well, and what could the coach try next time? Change roles and repeat. Afterwards, reflect as a group. Did the conversation have a clear purpose? How did the coach move between exploring and converging? Did the coach notice keywords and follow the coachee's interest? What did the conversation lead to: a solution, another outcome or a follow-up conversation?"
+    },
+    {
+     "id": "further-reading",
+     "heading": "Further reading",
+     "text": "Whitmore, J.: Coaching for Performance. Introduces the GROW model (goal, reality, options, will), a widely used structure for coaching conversations. Stanier, M. B.: The Coaching Habit. Seven questions for everyday coaching conversations, with a focus on staying curious longer."
+    }
+   ]
+  },
   {
    "collection": "coordination-collaboration-ai",
    "collectionTitle": "Leading Coordination and Collaboration in AI-Accelerated Organisations",
