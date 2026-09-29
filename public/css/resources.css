@@ -502,10 +502,8 @@ mark {
   margin-top: var(--space-3xl);
 }
 
-.module-group > h3 {
-  font-family: var(--font-family-heading);
-  font-size: var(--font-size-xl);
-  margin-bottom: var(--space-lg);
+.module-group > h2 {
+  margin-bottom: var(--space-xl);
 }
 
 /* --------------------------------------------------------------------------

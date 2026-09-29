@@ -246,7 +246,7 @@ for (const collection of collections) {
   }
   const groups = [...byModule.entries()].map(([label, rs]) => [
     `${I(10)}<div class="module-group">`,
-    `${I(12)}<h3>${escapeHtml(label)}</h3>`,
+    `${I(12)}<h2>${escapeHtml(label)}</h2>`,
     `${I(12)}<div class="course-list">`,
     rs.map((r) => card(r, { showCollection: false }).replace(/^ {10}/gm, I(14))).join('\n\n'),
     `${I(12)}</div>`,
