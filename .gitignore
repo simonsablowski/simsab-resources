@@ -1,3 +1,17 @@
+# Dependencies, installed with npm install
 node_modules/
+
+# Local Wrangler state and build cache
 .wrangler/
+
+# Local secrets for Wrangler and other tools
 .dev.vars
+.env*
+
+# Operating system files (macOS, Windows)
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Git bundles, used only to move history between machines
+*.bundle

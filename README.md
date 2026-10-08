@@ -134,6 +134,23 @@ the script reads the shared stylesheet and fonts from disk, so the PDFs match
 your local design and no network access is needed. Otherwise it loads them from
 courses.simsab.net. Use `--shared-dir <path>` to point somewhere else.
 
+## Git
+
+The repository is `simonsablowski/simsab-resources` on GitHub (private).
+`.gitignore` keeps out `node_modules/`, `.wrangler/`, local secrets
+(`.dev.vars`, `.env*`), operating system files and `*.bundle` files. The
+generated PDFs, `pdf-manifest.json` and `public/data/search-index.json` are
+committed, because they are deployed as they are.
+
+Commit messages are in English: short, in the imperative, factual.
+
+```
+git pull                       get the latest state
+git add -A                     stage all changes, including deleted files
+git commit -m "Add resource on ..."
+git push
+```
+
 ## Deployment (first time)
 
 1. `npx wrangler pages project create simsab-resources` (production branch: `main`)
