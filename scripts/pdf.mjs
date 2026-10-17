@@ -26,7 +26,7 @@
 
 import { createServer } from 'node:http';
 import { readFileSync, writeFileSync, existsSync, mkdirSync, statSync, readdirSync } from 'node:fs';
-import { join, dirname, extname, relative, basename } from 'node:path';
+import { join, dirname, extname, relative, basename, resolve as resolvePath } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { createHash } from 'node:crypto';
 import { chromium } from 'playwright';
@@ -46,7 +46,7 @@ const FORCE = args.includes('--force');
 const ONLY = arg('--only');
 const sharedArg = arg('--shared-dir');
 const SHARED_DIR = sharedArg
-  ? join(process.cwd(), sharedArg)
+  ? resolvePath(process.cwd(), sharedArg)
   : join(ROOT, '..', 'simsab-courses', 'public');
 const useLocalShared = existsSync(join(SHARED_DIR, 'css', 'styles.css'));
 
