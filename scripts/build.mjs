@@ -175,7 +175,7 @@ function conceptList(list, { showResource = true } = {}) {
   return items.map((c) => [
     `${I(12)}<li>`,
     `${I(14)}<a href="${escapeHtml(c.r.url)}#${escapeHtml(c.id)}">${escapeHtml(c.name)}</a>`,
-    showResource ? `${I(14)}<span class="concept-source">${escapeHtml(c.r.moduleTitle || c.r.collectionTitle)} · ${escapeHtml(c.r.title)}</span>` : '',
+    showResource ? `${I(14)}<span class="concept-source">${escapeHtml(c.r.title)}</span>` : '',
     `${I(12)}</li>`,
   ].filter(Boolean).join('\n')).join('\n');
 }
