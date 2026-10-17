@@ -158,7 +158,7 @@ function card(r, { showCollection }) {
   return [
     `${I(10)}<article class="course-card resource-card" data-collection="${escapeHtml(r.collection)}" data-module="${r.module ? escapeHtml(moduleKey(r)) : ''}" data-tags="${escapeHtml(r.tags.join('|'))}" data-url="${escapeHtml(r.url)}">`,
     `${I(12)}<span class="course-tag">${escapeHtml(kicker)}</span>`,
-    `${I(12)}<h3><a href="${escapeHtml(r.url)}">${escapeHtml(r.number)} · ${escapeHtml(r.title)}</a></h3>`,
+    `${I(12)}<h3><a href="${escapeHtml(r.url)}">${escapeHtml(r.title)}</a></h3>`,
     `${I(12)}<p class="card-meta">${meta}</p>`,
     `${I(12)}<p>${escapeHtml(r.summary)}</p>`,
     `${I(12)}<ul class="matches" hidden></ul>`,
@@ -175,7 +175,7 @@ function conceptList(list, { showResource = true } = {}) {
   return items.map((c) => [
     `${I(12)}<li>`,
     `${I(14)}<a href="${escapeHtml(c.r.url)}#${escapeHtml(c.id)}">${escapeHtml(c.name)}</a>`,
-    showResource ? `${I(14)}<span class="concept-source">Resource ${escapeHtml(c.r.number)} · ${escapeHtml(c.r.title)}</span>` : '',
+    showResource ? `${I(14)}<span class="concept-source">${escapeHtml(c.r.moduleTitle || c.r.collectionTitle)} · ${escapeHtml(c.r.title)}</span>` : '',
     `${I(12)}</li>`,
   ].filter(Boolean).join('\n')).join('\n');
 }

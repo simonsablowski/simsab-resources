@@ -1067,7 +1067,7 @@
     {
      "id": "the-connection-to-coordination-patterns",
      "heading": "The connection to coordination patterns",
-     "text": "Dependency discovery is not an end in itself — it is the input to coordination design. Once you know what your dependencies are, the question becomes: what is the right mechanism for managing each one? That question is covered in Resource 08 — Coordination Patterns and Flight Levels , which maps specific coordination approaches to specific dependency types and organisational contexts."
+     "text": "Dependency discovery is not an end in itself — it is the input to coordination design. Once you know what your dependencies are, the question becomes: what is the right mechanism for managing each one? That question is covered in Coordination Patterns and Flight Levels , which maps specific coordination approaches to specific dependency types and organisational contexts."
     },
     {
      "id": "further-reading",
@@ -1130,7 +1130,7 @@
     {
      "id": "skills-mapping-as-input-to-dependency-management",
      "heading": "Skills mapping as input to dependency management",
-     "text": "The direct connection between skills analysis and dependency discovery — the practice covered in Resource 06 — is that most technical and knowledge dependencies can be loosened by adding capability to the dependent team. If Team A depends on Team B because Team B has a data engineering expert and Team A does not, there are three structural responses: develop a data engineering capability within Team A, move someone with data engineering skills from Team B to Team A, or formalise the dependency as a service relationship (which does not remove the dependency but makes it more manageable). Skills maps make these choices visible and concrete. Instead of a vague discussion about \"reducing dependencies,\" you can point to a specific skill gap in a specific team and evaluate specific options for addressing it. This is the connection between the skills mapping work in the Cross-Team Collaboration module and the broader coordination pattern design work that follows ."
+     "text": "The direct connection between skills analysis and dependency discovery — the practice covered in Team Design and Dependency Discovery — is that most technical and knowledge dependencies can be loosened by adding capability to the dependent team. If Team A depends on Team B because Team B has a data engineering expert and Team A does not, there are three structural responses: develop a data engineering capability within Team A, move someone with data engineering skills from Team B to Team A, or formalise the dependency as a service relationship (which does not remove the dependency but makes it more manageable). Skills maps make these choices visible and concrete. Instead of a vague discussion about \"reducing dependencies,\" you can point to a specific skill gap in a specific team and evaluate specific options for addressing it. This is the connection between the skills mapping work in the Cross-Team Collaboration module and the broader coordination pattern design work that follows ."
     },
     {
      "id": "current-vs-needed-the-strategic-gap",
@@ -1278,7 +1278,7 @@
     {
      "id": "further-reading",
      "heading": "Further reading",
-     "text": "Freeman, R.E. — Strategic Management: A Stakeholder Approach (the foundational academic treatment of stakeholder theory) Bourne, L. — Stakeholder Relationship Management: A Maturity Model for Organisational Implementation (a practical treatment focused on project and programme contexts) For the DACI and RACI models of decision accountability — which define roles for stakeholders in specific decisions — see the Decision Protocol resource (Resource 10 in this library)."
+     "text": "Freeman, R.E. — Strategic Management: A Stakeholder Approach (the foundational academic treatment of stakeholder theory) Bourne, L. — Stakeholder Relationship Management: A Maturity Model for Organisational Implementation (a practical treatment focused on project and programme contexts) For the DACI and RACI models of decision accountability — which define roles for stakeholders in specific decisions — see the Decision Protocol resource."
     }
    ]
   },
