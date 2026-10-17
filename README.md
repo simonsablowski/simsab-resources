@@ -144,6 +144,9 @@ committed, because they are deployed as they are.
 
 Commit messages are in English: short, in the imperative, factual.
 
+`.gitattributes` keeps all text files at LF line endings, also on Windows,
+so that running the build does not mark generated files as changed.
+
 ```
 git pull                       get the latest state
 git add -A                     stage all changes, including deleted files
