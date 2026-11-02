@@ -4,6 +4,9 @@ node_modules/
 # Local Wrangler state and build cache
 .wrangler/
 
+# Staged copy of public/ that is deployed (see scripts/stage.mjs)
+.deploy/
+
 # Local secrets for Wrangler and other tools
 .dev.vars
 .env*

@@ -13,6 +13,7 @@
  *      points nowhere.
  *
  * A page counts as a resource page when it has <meta name="resource:number">.
+ * Resources hidden in library.config.json are left out of steps 1 and 2.
  *
  * Usage: node scripts/build.mjs          (build and check)
  *        node scripts/build.mjs --check  (check only, write nothing)
@@ -21,6 +22,7 @@
 import { readFileSync, writeFileSync, readdirSync, statSync, existsSync, mkdirSync } from 'node:fs';
 import { join, relative, dirname, posix } from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { isHidden } from './config.mjs';
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
 const PUBLIC = join(ROOT, 'public');
@@ -81,7 +83,7 @@ function replaceBetween(html, name, content, file) {
 /* ---------------------------------------------------------- read resources */
 
 const htmlFiles = walk(PUBLIC).filter((f) => f.endsWith('.html'));
-const resources = [];
+const allResources = [];
 
 for (const file of htmlFiles) {
   const html = readFileSync(file, 'utf8');
@@ -105,7 +107,7 @@ for (const file of htmlFiles) {
   const concepts = [...html.matchAll(/<(\w+)[^>]*\sid="([^"]+)"[^>]*\sdata-concept="([^"]+)"/g)]
     .map((m) => ({ name: decode(m[3]), id: m[2] }));
 
-  resources.push({
+  allResources.push({
     collection: meta(html, 'resource:collection'),
     collectionTitle: meta(html, 'resource:collection-title'),
     number: meta(html, 'resource:number'),
@@ -121,6 +123,9 @@ for (const file of htmlFiles) {
     sections,
   });
 }
+
+const resources = allResources.filter((r) => !isHidden(r));
+const hiddenCount = allResources.length - resources.length;
 
 resources.sort((a, b) => a.collection.localeCompare(b.collection) || a.number.localeCompare(b.number));
 
@@ -139,7 +144,7 @@ writeFileSync(
   join(PUBLIC, 'data', 'search-index.json'),
   JSON.stringify({ collections, resources }, null, 1) + '\n',
 );
-console.log(`Wrote data/search-index.json (${resources.length} resources)`);
+console.log(`Wrote data/search-index.json (${resources.length} resources${hiddenCount ? `, ${hiddenCount} hidden` : ''})`);
 
 /* ----------------------------------------------------------- page snippets */
 

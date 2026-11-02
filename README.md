@@ -28,6 +28,9 @@ public/
 scripts/
   build.mjs                      Search index, index pages, link check
   pdf.mjs                        PDF generation
+  stage.mjs                      Copy of public/ without hidden content, for deploy and preview
+  config.mjs                     Reads library.config.json
+library.config.json              Which collections, modules and topics are hidden
 templates/resource.html          Starting point for a new resource page
 ```
 
@@ -41,6 +44,35 @@ Current collections:
   *Product Ownership: Deciding What to Build and Why*, grouped by module.
 - `coaching-skills`: ten resources for *From Telling to Asking: Coaching
   Skills for Leaders*, grouped by module.
+
+Three of these collections are currently hidden (see below): `coaching-skills`,
+`effective-meetings` and `product-ownership`. Their files stay in `public/`.
+
+## Hide collections, modules and topics
+
+`library.config.json` lists what is not shown:
+
+```json
+{
+  "hidden": {
+    "collections": ["product-ownership"],
+    "modules": ["coordination-collaboration-ai:2"],
+    "topics": ["Coaching"]
+  }
+}
+```
+
+- `collections`: collection folder names. The whole collection is hidden.
+- `modules`: `<collection>:<module number>`.
+- `topics`: topic names. Every resource with that topic is hidden.
+
+Hidden resources are left out of the library index, the search index, the
+concept index, the PDF step and the deployed site: `npm run stage` copies
+`public/` to `.deploy/` without them, and `npm run deploy` and `npm run dev`
+serve `.deploy/`. In that copy, "Related resources" cards that point to a
+hidden page are removed too; the source pages are not changed. To show
+something again, remove its entry and run `npm run build`, then
+`npm run deploy`. Nothing is deleted.
 
 ## Shared styling with the course site
 
@@ -70,8 +102,9 @@ npx wrangler login             once
 
 npm run build                  rebuild search index and index pages, check links
 npm run pdf                    create PDFs for new or changed resources
-npm run dev                    local preview at http://localhost:8788
-npm run deploy                 build + pdf + deploy to Cloudflare Pages
+npm run stage                  copy public/ to .deploy/ without hidden content
+npm run dev                    build + stage + local preview at http://localhost:8788
+npm run deploy                 build + pdf + stage + deploy to Cloudflare Pages
 ```
 
 ### Edit a resource

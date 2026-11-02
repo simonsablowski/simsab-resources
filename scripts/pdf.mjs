@@ -29,6 +29,7 @@ import { readFileSync, writeFileSync, existsSync, mkdirSync, statSync, readdirSy
 import { join, dirname, extname, relative, basename, resolve as resolvePath } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { createHash } from 'node:crypto';
+import { isHidden, hiddenCollections } from './config.mjs';
 import { chromium } from 'playwright';
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
@@ -74,6 +75,18 @@ const hash = (...parts) => createHash('sha256').update(parts.join('\u0000')).dig
 
 /* ------------------------------------------------------------ find pages */
 
+/** Hidden in library.config.json: no PDF is made, and none is deployed. */
+function hiddenInConfig({ file, urlPath }) {
+  if (hiddenCollections.has(urlPath.split('/')[1])) return true;
+  const html = readFileSync(file, 'utf8');
+  const meta = (name) => (html.match(new RegExp(`<meta\\s+name="${name}"\\s+content="([^"]*)"`, 'i')) || [, ''])[1];
+  return isHidden({
+    collection: meta('resource:collection'),
+    module: Number(meta('resource:module')) || null,
+    tags: meta('resource:tags').split(',').map((t) => t.trim()).filter(Boolean),
+  });
+}
+
 const pages = walk(PUBLIC)
   .filter((f) => f.endsWith('.html'))
   // Resource pages and printable templates.
@@ -84,6 +97,7 @@ const pages = walk(PUBLIC)
     const slug = basename(file, '.html');
     return { file, urlPath, slug, pdf: join(dirname(file), 'pdf', `${slug}.pdf`) };
   })
+  .filter((p) => !hiddenInConfig(p))
   .filter((p) => !ONLY || p.slug === ONLY);
 
 if (!pages.length) {
