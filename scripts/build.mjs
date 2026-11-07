@@ -24,6 +24,7 @@
 import { readFileSync, writeFileSync, readdirSync, statSync, existsSync, mkdirSync } from 'node:fs';
 import { join, relative, dirname, posix } from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { createHash } from 'node:crypto';
 import { isHidden } from './config.mjs';
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
@@ -136,12 +137,20 @@ const collections = [...new Map(resources.map((r) => [r.collection, { slug: r.co
 
 const SITE = 'https://resources.simsab.net';
 
+// A short hash of the favicon (and of the preview image template) is appended
+// to the URLs, so that tools which cache icons and images by URL fetch the new
+// version after a design change.
+const versionOf = (...files) => createHash('sha256')
+  .update(files.map((f) => readFileSync(join(ROOT, f), 'utf8')).join('|')).digest('hex').slice(0, 8);
+const ICON_VERSION = versionOf('public/favicon.svg');
+const OG_VERSION = versionOf('public/favicon.svg', 'templates/og.html');
+
 const ICON_TAGS = [
-  '<link rel="icon" href="/favicon.svg" type="image/svg+xml">',
-  '<link rel="icon" href="/favicon-32x32.png" type="image/png" sizes="32x32">',
-  '<link rel="icon" href="/favicon.ico" sizes="any">',
-  '<link rel="apple-touch-icon" href="/apple-touch-icon.png">',
-  '<link rel="manifest" href="/site.webmanifest">',
+  `<link rel="icon" href="/favicon.svg?v=${ICON_VERSION}" type="image/svg+xml">`,
+  `<link rel="icon" href="/favicon-32x32.png?v=${ICON_VERSION}" type="image/png" sizes="32x32">`,
+  `<link rel="icon" href="/favicon.ico?v=${ICON_VERSION}" sizes="any">`,
+  `<link rel="apple-touch-icon" href="/apple-touch-icon.png?v=${ICON_VERSION}">`,
+  `<link rel="manifest" href="/site.webmanifest">`,
 ];
 
 const ICON_LINE = /^[ \t]*<link rel="(?:icon|apple-touch-icon|manifest)"[^>]*>\r?\n/gm;
@@ -307,7 +316,7 @@ function headTags(file, html) {
     icons: ICON_TAGS.map((t) => `  ${t}`).join('\n') + '\n',
     og: og && [
       `  <meta property="og:url" content="${og.url}">`,
-      `  <meta property="og:image" content="${SITE + og.image}">`,
+      `  <meta property="og:image" content="${SITE + og.image}?v=${OG_VERSION}">`,
       '  <meta property="og:image:width" content="1200">',
       '  <meta property="og:image:height" content="630">',
       '  <meta name="twitter:card" content="summary_large_image">',

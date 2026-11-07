@@ -163,7 +163,7 @@ for (const item of todo) {
   try {
     const html = template
       .replace('{{label}}', () => escapeHtml(item.label))
-      .replace('{{titleClass}}', item.title.length > 42 ? ' long' : '')
+      .replace('{{titleClass}}', item.title.length > 28 ? ' long' : '')
       .replace('{{title}}', () => escapeHtml(item.title))
       .replace('{{description}}', () => escapeHtml(item.description))
       .replace('{{mark}}', () => mark);
