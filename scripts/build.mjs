@@ -154,7 +154,7 @@ const ICON_TAGS = [
 ];
 
 const ICON_LINE = /^[ \t]*<link rel="(?:icon|apple-touch-icon|manifest)"[^>]*>\r?\n/gm;
-const OG_LINE = /^[ \t]*<meta (?:property="og:(?:image|image:width|image:height|url)"|name="twitter:card")[^>]*>\r?\n/gm;
+const OG_LINE = /^[ \t]*<meta (?:property="og:(?:image|image:width|image:height|url|site_name)"|name="twitter:card")[^>]*>\r?\n/gm;
 
 if (CHECK_ONLY) {
   checkLinks();
@@ -315,6 +315,7 @@ function headTags(file, html) {
   const lines = {
     icons: ICON_TAGS.map((t) => `  ${t}`).join('\n') + '\n',
     og: og && [
+      '  <meta property="og:site_name" content="Resource Library">',
       `  <meta property="og:url" content="${og.url}">`,
       `  <meta property="og:image" content="${SITE + og.image}?v=${OG_VERSION}">`,
       '  <meta property="og:image:width" content="1200">',
