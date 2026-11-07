@@ -1,2 +1,17 @@
+# Search engines and other crawlers are asked to stay out. The pages also carry
+# a robots noindex tag and an X-Robots-Tag header.
 User-agent: *
 Disallow: /
+
+# Link preview bots may fetch pages and preview images (og:image), so that links
+# show a card in Slack, LinkedIn, Teams, WhatsApp and similar tools. They do not index.
+User-agent: Slackbot
+User-agent: Slackbot-LinkExpanding
+User-agent: Slack-ImgProxy
+User-agent: LinkedInBot
+User-agent: Twitterbot
+User-agent: facebookexternalhit
+User-agent: Facebot
+User-agent: SkypeUriPreview
+User-agent: WhatsApp
+Allow: /
