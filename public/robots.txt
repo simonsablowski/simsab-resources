@@ -2,6 +2,10 @@
 # a robots noindex tag and an X-Robots-Tag header.
 User-agent: *
 Disallow: /
+# Preview images stay fetchable for every bot, because not every link preview
+# tool announces itself by name. The pages themselves remain disallowed.
+Allow: /og/
+Allow: /*/og/
 
 # Link preview bots may fetch pages and preview images (og:image), so that links
 # show a card in Slack, LinkedIn, Teams, WhatsApp and similar tools. They do not index.

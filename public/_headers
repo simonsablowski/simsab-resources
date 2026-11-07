@@ -7,5 +7,12 @@
   X-Content-Type-Options: nosniff
   Referrer-Policy: strict-origin-when-cross-origin
 
+# Preview images (og:image) must be usable by link preview tools, some of which
+# treat noindex on an image as "do not show it". The pages stay noindex.
+/og/*
+  ! X-Robots-Tag
+/*/og/*
+  ! X-Robots-Tag
+
 /data/*
   Cache-Control: public, max-age=0, must-revalidate
