@@ -9,8 +9,10 @@
  *   2. regenerates the resource cards, filters and concept index on
  *      public/index.html and public/<collection>/index.html (between the
  *      <!-- build:... --> markers; everything outside the markers is left alone),
- *   3. checks every internal link and #anchor, and stops with an error if one
- *      points nowhere.
+ *   3. keeps the icon links and the Open Graph / Twitter card tags (preview
+ *      image) of every page in sync,
+ *   4. checks every internal link and #anchor, and stops with an error if one
+ *      points nowhere or a page lacks its og:image tag.
  *
  * A page counts as a resource page when it has <meta name="resource:number">.
  * Resources hidden in library.config.json are left out of steps 1 and 2.
@@ -131,6 +133,19 @@ resources.sort((a, b) => a.collection.localeCompare(b.collection) || a.number.lo
 
 const collections = [...new Map(resources.map((r) => [r.collection, { slug: r.collection, title: r.collectionTitle, url: `/${r.collection}/` }])).values()];
 
+
+const SITE = 'https://resources.simsab.net';
+
+const ICON_TAGS = [
+  '<link rel="icon" href="/favicon.svg" type="image/svg+xml">',
+  '<link rel="icon" href="/favicon-32x32.png" type="image/png" sizes="32x32">',
+  '<link rel="icon" href="/favicon.ico" sizes="any">',
+  '<link rel="apple-touch-icon" href="/apple-touch-icon.png">',
+  '<link rel="manifest" href="/site.webmanifest">',
+];
+
+const ICON_LINE = /^[ \t]*<link rel="(?:icon|apple-touch-icon|manifest)"[^>]*>\r?\n/gm;
+const OG_LINE = /^[ \t]*<meta (?:property="og:(?:image|image:width|image:height|url)"|name="twitter:card")[^>]*>\r?\n/gm;
 
 if (CHECK_ONLY) {
   checkLinks();
@@ -264,6 +279,78 @@ for (const collection of collections) {
   console.log(`Updated ${collection.slug}/index.html`);
 }
 
+/* ------------------------------------------------- icons and preview images */
+// Every page gets the same icon links. Resource pages, collection pages and the
+// library index also get the Open Graph and Twitter card tags for the preview
+// image rendered by scripts/og.mjs (public/<collection>/og/<slug>.png).
+
+/** The preview image tags a page needs, or null for pages without one (worksheets). */
+function ogTags(file, html) {
+  const rel = relative(PUBLIC, file).split('\\').join('/');
+  const parts = rel.split('/');
+  let image;
+  if (meta(html, 'resource:number')) {
+    image = `/${parts[0]}/og/${parts[parts.length - 1].replace(/\.html$/, '')}.png`;
+  } else if (parts.length === 2 && parts[1] === 'index.html') {
+    image = `/${parts[0]}/og/index.png`;
+  } else if (rel === 'index.html') {
+    image = '/og/index.png';
+  } else {
+    return null;
+  }
+  return { image, url: SITE + urlPath(file) };
+}
+
+function headTags(file, html) {
+  const og = ogTags(file, html);
+  const lines = {
+    icons: ICON_TAGS.map((t) => `  ${t}`).join('\n') + '\n',
+    og: og && [
+      `  <meta property="og:url" content="${og.url}">`,
+      `  <meta property="og:image" content="${SITE + og.image}">`,
+      '  <meta property="og:image:width" content="1200">',
+      '  <meta property="og:image:height" content="630">',
+      '  <meta name="twitter:card" content="summary_large_image">',
+    ].join('\n') + '\n',
+  };
+  let out = html.replace(ICON_LINE, '').replace(OG_LINE, '');
+  out = out.replace(/(<meta name="viewport"[^>]*>\r?\n)/, `$1${lines.icons}`);
+  if (lines.og) out = out.replace(/(<meta property="og:type"[^>]*>\r?\n)/, `$1${lines.og}`);
+  return { html: out, og };
+}
+
+function syncHead() {
+  let changed = 0;
+  for (const file of htmlFiles) {
+    const html = readFileSync(file, 'utf8');
+    const { html: out } = headTags(file, html);
+    if (out !== html) {
+      writeFileSync(file, out);
+      changed++;
+    }
+  }
+  console.log(`Updated icon and preview image tags in ${changed} pages`);
+}
+
+/** Pages whose icon or preview image tags are missing or out of date. */
+function headErrors() {
+  const errors = [];
+  let missingImages = 0;
+  for (const file of htmlFiles) {
+    const html = readFileSync(file, 'utf8');
+    const { html: expected, og } = headTags(file, html);
+    const name = relative(ROOT, file);
+    if (og && !/<meta property="og:image" content="https:\/\/[^"]+"/.test(html)) {
+      errors.push(`missing og:image: ${name}`);
+    } else if (expected !== html) {
+      errors.push(`icon or preview tags out of date (run npm run build): ${name}`);
+    }
+    if (og && !existsSync(join(PUBLIC, og.image))) missingImages++;
+  }
+  if (missingImages) console.warn(`${missingImages} preview image(s) not rendered yet (run npm run og)`);
+  return errors;
+}
+
 /* -------------------------------------------------------------- link check */
 // Runs after the index pages are regenerated, so it checks what will be deployed.
 
@@ -291,11 +378,16 @@ for (const file of htmlFiles) {
   }
 }
 
+const head = headErrors();
 if (errors.length) {
   console.error(`\n${errors.length} broken link(s):\n  ` + errors.join('\n  ') + '\n');
-  process.exit(1);
 }
-console.log(`Checked links in ${htmlFiles.length} pages: OK`);
+if (head.length) {
+  console.error(`\n${head.length} page(s) with missing or outdated head tags:\n  ` + head.join('\n  ') + '\n');
+}
+if (errors.length || head.length) process.exit(1);
+console.log(`Checked links, icons and preview tags in ${htmlFiles.length} pages: OK`);
 }
 
+syncHead();
 checkLinks();

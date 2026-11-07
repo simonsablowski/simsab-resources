@@ -1,0 +1,79 @@
+<!doctype html>
+<!--
+  Template for the Open Graph preview images (1200 x 630). scripts/og.mjs fills
+  the label, title and description placeholders in the body and renders the page
+  with Playwright. Fonts and colours come from the course site's stylesheet,
+  like the pages.
+-->
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://courses.simsab.net/css/styles.css">
+  <style>
+    * { box-sizing: border-box; }
+    html, body { margin: 0; width: 1200px; height: 630px; overflow: hidden; }
+    body {
+      display: flex;
+      flex-direction: column;
+      padding: 64px 80px 56px;
+      background: var(--color-primary);
+      color: var(--color-primary-contrast);
+      font-family: var(--font-family-body);
+    }
+    .label {
+      margin: 0;
+      font-size: 28px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--color-primary-subtle);
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+    .title {
+      margin: 28px 0 0;
+      font-family: var(--font-family-heading);
+      font-weight: 700;
+      font-size: 84px;
+      line-height: 1.08;
+      color: var(--color-primary-contrast);
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+    .title.long { font-size: 68px; }
+    .description {
+      margin: 28px 0 0;
+      font-size: 32px;
+      line-height: 1.4;
+      color: var(--color-primary-subtle);
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+    .footer {
+      margin-top: auto;
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      font-size: 30px;
+      font-weight: 700;
+      color: var(--color-primary-contrast);
+    }
+    .footer svg { width: 52px; height: 52px; flex: none; }
+  </style>
+</head>
+<body>
+  <p class="label">{{label}}</p>
+  <h1 class="title{{titleClass}}">{{title}}</h1>
+  <p class="description">{{description}}</p>
+  <div class="footer">
+    {{mark}}
+    <span>resources.simsab.net</span>
+  </div>
+</body>
+</html>

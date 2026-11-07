@@ -53,6 +53,7 @@ for (const file of files) {
   hiddenUrls.push(url);
   skip.add(file);
   skip.add(join(dirname(file), 'pdf', posix.basename(url) + '.pdf'));
+  skip.add(join(dirname(file), 'og', posix.basename(url) + '.png'));
 }
 
 rmSync(OUT, { recursive: true, force: true });

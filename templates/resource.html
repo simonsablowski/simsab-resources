@@ -8,8 +8,9 @@
   2. Replace everything in [SQUARE BRACKETS] and delete these comments.
   3. Run `npm run build`. It adds the resource to the library index, the
      collection page and the search, and checks all links.
-  4. Run `npm run pdf` to create the PDF download (only new or changed pages
-     are regenerated).
+  4. Run `npm run pdf` to create the PDF download and `npm run og` to render the
+     preview image (only new or changed pages are regenerated). `npm run build`
+     keeps the og: and icon tags of the page up to date by itself.
 
   Conventions
   - One <section> per h2. Give every h2 an id (lower case, words joined with -).
@@ -28,15 +29,22 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
   <link rel="icon" href="/favicon-32x32.png" type="image/png" sizes="32x32">
+  <link rel="icon" href="/favicon.ico" sizes="any">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
   <title>[Title] — Resource Library</title>
   <meta name="description" content="[One or two sentence summary. Used on cards, in search and as the lead.]">
   <meta name="robots" content="noindex">
   <meta property="og:title" content="[Title]">
   <meta property="og:description" content="[Same summary]">
   <meta property="og:type" content="article">
+  <meta property="og:url" content="https://resources.simsab.net/[collection-slug]/[slug]">
+  <meta property="og:image" content="https://resources.simsab.net/[collection-slug]/og/[slug].png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
   <meta name="resource:collection" content="[collection-slug]">
   <meta name="resource:collection-title" content="[Collection title]">
   <meta name="resource:number" content="[04]">

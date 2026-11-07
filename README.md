@@ -74,6 +74,24 @@ hidden page are removed too; the source pages are not changed. To show
 something again, remove its entry and run `npm run build`, then
 `npm run deploy`. Nothing is deleted.
 
+## Preview images and icons
+
+Every resource page, collection page and the library index has an Open Graph
+preview image (1200 × 630 PNG) for link previews in Miro, Slack, LinkedIn and
+Teams: `public/<collection>/og/<slug>.png`, `public/<collection>/og/index.png`
+and `public/og/index.png`. `npm run og` renders them from `templates/og.html`
+with Playwright and `og-manifest.json` records what was rendered, so only new
+or changed pages get a new image (`npm run og -- --force` renders all).
+`npm run build` writes the matching `og:image`, `og:url` and `twitter:card`
+tags into every page, and `npm run check` fails for a page without them. Hidden
+collections get images too, but `npm run stage` leaves them out of the deploy.
+
+The favicon is `public/favicon.svg`. `npm run icons` renders `favicon.ico`,
+`favicon-32x32.png`, `apple-touch-icon.png`, `icon-192.png`, `icon-512.png` and
+`site.webmanifest` from it (`-- --out <folder>` writes a preview sheet into
+another folder instead). `npm run build` keeps the icon links in all pages
+consistent.
+
 ## Shared styling with the course site
 
 Every page loads the course site's stylesheet first, then this site's own:
@@ -102,6 +120,7 @@ npx wrangler login             once
 
 npm run build                  rebuild search index and index pages, check links
 npm run pdf                    create PDFs for new or changed resources
+npm run og                     render preview images for new or changed pages
 npm run stage                  copy public/ to .deploy/ without hidden content
 npm run dev                    build + stage + local preview at http://localhost:8788
 npm run deploy                 build + pdf + stage + deploy to Cloudflare Pages
