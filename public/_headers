@@ -11,7 +11,7 @@
 # treat noindex on an image as "do not show it". The pages stay noindex.
 /og/*
   ! X-Robots-Tag
-/*/og/*
+/:collection/og/*
   ! X-Robots-Tag
 
 /data/*
