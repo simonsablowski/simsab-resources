@@ -45,8 +45,8 @@ Current collections:
 - `coaching-skills`: ten resources for *From Telling to Asking: Coaching
   Skills for Leaders*, grouped by module.
 
-Three of these collections are currently hidden (see below): `coaching-skills`,
-`effective-meetings` and `product-ownership`. Their files stay in `public/`.
+Two of these collections are currently hidden (see below): `coaching-skills`
+and `product-ownership`. Their files stay in `public/`.
 
 ## Hide collections, modules and topics
 

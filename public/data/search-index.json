@@ -4,6 +4,11 @@
    "slug": "coordination-collaboration-ai",
    "title": "Leading Coordination and Collaboration in AI-Accelerated Organisations",
    "url": "/coordination-collaboration-ai/"
+  },
+  {
+   "slug": "effective-meetings",
+   "title": "Designing and Facilitating Meetings That Move Work Forward",
+   "url": "/effective-meetings/"
   }
  ],
  "resources": [
@@ -412,7 +417,7 @@
     {
      "id": "practical-techniques-by-zone",
      "heading": "Practical techniques by zone",
-     "text": "Knowing which zone you are in is only useful if you have practical moves available for each. The following are not scripts — they are a repertoire to draw on as the situation requires. In the Divergent Zone , the facilitator's primary job is to protect the space from premature evaluation. Pause any criticism until brainstorming is genuinely complete. Use silent writing — asking participants to write ideas individually before sharing — so that quieter voices are not drowned out by more confident ones before they have formed their thoughts. Paraphrase what you hear to check understanding and signal that you are genuinely tracking what people say. Ask clarifying questions with phrases like \"What I understand you're saying is...\" or \"Help me understand...\" rather than evaluative ones. Occasional nods or short verbal cues (\"and?\", \"tell me more\") encourage the speaker without interrupting the flow. Mirror body language subtly to create rapport, or deliberately shift your own posture to change the energy when a discussion is getting stuck. In the Groan Zone , the facilitator's job is to hold the space rather than collapse it. Use structured go-arounds to ensure every voice is heard before the group moves on. Invite individual writing before wider sharing, which surfaces deeper reflections that might be lost in open discussion. Break into pairs or small groups to explore a specific tension in more depth and then report back to the whole group — this often unlocks perspectives that people are reluctant to voice in a larger setting. Resist the pull to resolve the discomfort too quickly; name it explicitly so the group understands that what they are feeling is a productive sign, not evidence of failure. In the Convergent Zone , the facilitator's job is to bring discipline to the closing. Make the available decision-making techniques visible — Fist-to-Five, majority vote, consent round, Decider Protocol — and explain them briefly so the group can choose consciously rather than defaulting to an implicit process. Check whether the group has an existing working agreement about how they make decisions; if not, facilitate a quick agreement before proceeding. Focus the group on committing to one or two concrete actions rather than an overwhelming list that dilutes accountability."
+     "text": "Knowing which zone you are in is only useful if you have practical moves available for each. The following are not scripts. They are a repertoire to draw on as the situation requires. Each zone also has a guiding question that you can ask the group as it is. The Facilitation Toolkit describes every tool mentioned here. In business as usual , the facilitator sets the frame before anyone argues for an answer: the expectations, the agenda, the roles, the time available and how the group will decide. The guiding question is “What exactly do we need to decide, and by when?”. Useful tools are setting expectations , an agenda , roles , timeboxing , a check-in and agreeing the decision rule . In the divergent zone , the facilitator protects the space from premature evaluation and makes sure that quieter voices are heard before the most confident ones shape the discussion. The guiding question is “What else?”. Useful tools are brainstorming , brainwriting , 1-2-4-all , round robin , small groups and mind mapping . In the groan zone , the facilitator holds the space instead of collapsing it. Name the discomfort, so the group understands that it is a productive sign and not evidence of failure, and help people understand why their perspectives differ. The guiding question is “Where exactly do we disagree?”. Useful tools are paraphrasing , drawing people out , legitimising differences , circular questions , the perfection game and ritual dissent . In the convergent zone , the facilitator brings discipline to combining and evaluating the options, so that the group compares them against shared criteria instead of personal preferences. The guiding question is “Which criteria matter most?”. Useful tools are clustering , dot voting , a criteria matrix , gradients of agreement , bridging questions and the parking lot . At closure , the facilitator makes the decision and everyone's level of support explicit, and focuses the group on one or two concrete actions instead of a long list. The guiding question is “Who does what, by when?”. Useful tools are fist to five , consent , the decider protocol , ROTI and SMART actions ."
     },
     {
      "id": "diamonds-within-diamonds",
@@ -795,6 +800,290 @@
      "id": "further-reading",
      "heading": "Further reading",
      "text": "Maister, D., Green, C., & Galford, R. — The Trusted Advisor (the most practical treatment of professional client relationship management, with strong application to internal stakeholder relationships) Patterson, K., Grenny, J., McMillan, R., & Switzler, A. — Crucial Conversations: Tools for Talking When Stakes Are High (directly applicable to expectation repair and alignment conversations) Humble, J. & Farley, D. — Continuous Delivery (the continuous delivery model has strong implications for how delivery cadence affects stakeholder communication and expectation management)"
+    }
+   ]
+  },
+  {
+   "collection": "effective-meetings",
+   "collectionTitle": "Designing and Facilitating Meetings That Move Work Forward",
+   "number": "01",
+   "module": 1,
+   "moduleTitle": "Designing Meetings",
+   "title": "Designing Effective Meetings",
+   "url": "/effective-meetings/designing-effective-meetings",
+   "pdf": "/effective-meetings/pdf/designing-effective-meetings.pdf",
+   "summary": "How to design a meeting before it starts: name its goal (decide, inform or generate), right-size the invite list, and choose a format that fits the goal.",
+   "tags": [
+    "Meetings",
+    "Facilitation",
+    "Decision-making"
+   ],
+   "readingTime": 6,
+   "concepts": [
+    {
+     "name": "Meeting goals: decide, inform, generate",
+     "id": "start-with-the-goal"
+    },
+    {
+     "name": "Right-sizing the invite list",
+     "id": "right-size-the-invite-list"
+    },
+    {
+     "name": "Consult, involve, skip, inform",
+     "id": "who-needs-to-be-there"
+    },
+    {
+     "name": "Meeting formats",
+     "id": "choose-the-format"
+    },
+    {
+     "name": "Replace, change or keep",
+     "id": "replace-change-or-keep"
+    },
+    {
+     "name": "Goal sentence",
+     "id": "goal-sentence"
+    }
+   ],
+   "sections": [
+    {
+     "id": "what-this-resource-is-for",
+     "heading": "What this resource is for",
+     "text": "Many meeting problems are decided before the meeting starts: what the meeting is for, who is invited, and which format it uses. This resource covers these three design choices in that order, and then what to do with recurring meetings that no longer fit. Each choice should serve the one before it."
+    },
+    {
+     "id": "start-with-the-goal",
+     "heading": "Start with the goal",
+     "text": "Before building an agenda, name the meeting's goal. Most meetings quietly try to do more than one of the following at once, which is usually why they run long and satisfy no one. Decide means a choice needs to be made, and someone in the room has the authority to make it. A meeting with a Decide goal should end with a clear decision, or a clear statement of what is still missing before one can be made. Inform means people need the same information at the same time, and no decision is required. If the only goal is to share information, it is worth asking honestly whether a meeting is even the right format, since a well-written update often achieves the same thing without needing everyone's calendar at once. Generate means new ideas or options are needed before any decision is possible. This is divergent work , and it should not be squeezed into the same slot as a Decide conversation, because groups that are still generating options are not ready to commit to one of them yet. Naming the goal before building the agenda matters because an agenda that does not know its own goal usually tries to do all three badly: it opens with information sharing, drifts into generating new ideas halfway through, and then runs out of time to actually decide anything. Once the goal is named, the agenda, the invite list, and the format all become much easier to design, because each of those choices should serve that one goal rather than trying to serve several at once."
+    },
+    {
+     "id": "right-size-the-invite-list",
+     "heading": "Right-size the invite list",
+     "text": "Every extra person in a meeting is a cost, not just to their own time but to the group's ability to move quickly and speak freely. Right-sizing the invite list is worth doing deliberately, before touching the agenda. Three questions help with this. Whose decision is this, really? This connects to stakeholder segmentation : the people whose formal authority or accountability makes this genuinely their call belong in the room. Whose work depends on the outcome, even without a formal say in it? These people may not need to shape the decision, but they need to know about it, and leaving them out because they lack formal authority often creates exactly the kind of late surprise that stakeholder management is meant to prevent. Finally, who could this be handled with asynchronously, or afterwards, instead? Not every stakeholder needs to be in the room for the whole conversation. A short written update, or a five-minute conversation after the fact, is sometimes the better way to keep someone genuinely informed without inflating the meeting itself. This is also where delegation and stakeholder segmentation connect directly to meeting design. A meeting that has quietly grown to include every possible stakeholder \"just in case\" is usually a symptom of discomfort with delegation: inviting everyone feels safer than deciding who actually needs to be there, but it produces a slower, more cautious conversation with less genuine ownership from anyone in it. Who needs to be there can be decided with two questions for each person: how strongly does the outcome of this meeting affect them, and how interested are they in this particular meeting? The answers give four options. Involve people with a high impact and a high interest: they must be in the meeting. Consult people with a high impact but a low interest: ask for their input before the meeting. Inform people with a low impact but a high interest: send them the outcome afterwards. Skip people with a low impact and a low interest: leave them out of this meeting. Make this choice for each meeting, not once for the whole project, because the same person can belong in one meeting and not in the next."
+    },
+    {
+     "id": "choose-the-format",
+     "heading": "Choose the format",
+     "text": "Once the goal is named and the invite list is right-sized, the format should follow the goal rather than defaulting to whatever format the last meeting used. Six recurring formats cover most working meetings. Brainstorm is best for generating options before narrowing them down. Watch out for groupthink if the most senior voices speak first; a short round of individual, silent idea generation before opening the floor helps counter this. Decision protocol is best when a clear decision needs to be made with input from several people. Watch out for making this feel heavier than the decision actually warrants; a low-stakes call does not need a full protocol. Status or information share is best for keeping people aligned when no decision is needed. Watch out for the fact that this is often better handled with a written update than a meeting at all. Structured retrospective is best for reflecting on a recurring practice in order to improve it. Watch out for the fact that this format needs real trust in the room; without it, feedback stays surface-level and the retrospective produces little of value. Open discussion is best for exploring a genuinely open question that does not yet have a clear shape. Watch out for drift; an open discussion without a visible timebox can wander indefinitely without reaching anywhere useful. Review or approval is best for checking a piece of work, a proposal, or a deliverable against a known standard or set of criteria before it moves forward. Watch out for rubber-stamping, where reviewers have not actually engaged with the material beforehand, or for drifting into open debate when the approval criteria were never made clear at the outset."
+    },
+    {
+     "id": "replace-change-or-keep",
+     "heading": "Replace, change or keep",
+     "text": "Recurring meetings tend to stay in the calendar long after their original purpose has changed. Many of them also become the default tool for every kind of alignment, even where a written update or a short conversation would work better. Once you have named a meeting's goal and decided who needs to be there, there are three options. Replace the meeting when it no longer needs everyone at the same time. Inform meetings can often become written updates that people read when it suits them, with a clear way to ask questions. Change the meeting when it is needed but does not work well. Decide meetings need a clear decision owner and an agreed decision process. Generate meetings need a structured technique, such as brainwriting or 1-2-4-all , instead of open discussion. Keep the meeting when it works, but give it a clear goal that everyone knows. A goal sentence describes what will be true at the end of the meeting, so that everyone can tell afterwards whether the meeting reached it. “By the end of this meeting, we will have discussed the roadmap” is a weak goal, because any discussion fulfils it. “By the end of this meeting, we will have agreed which features move to Q1” is a strong goal, because it names a concrete result."
+    },
+    {
+     "id": "try-it-redesign-a-recurring-meeting",
+     "heading": "Try it: redesign a recurring meeting",
+     "text": "Take one real, recurring meeting from your own work, on your own or with a colleague, and redesign it: name its actual goal, decide who truly needs to be there, choose the format that fits, decide whether to replace, change or keep it, and write a goal sentence for the next occurrence. It is worth repeating this whenever a recurring meeting starts to feel like it has drifted from its original purpose."
+    }
+   ]
+  },
+  {
+   "collection": "effective-meetings",
+   "collectionTitle": "Designing and Facilitating Meetings That Move Work Forward",
+   "number": "02",
+   "module": 2,
+   "moduleTitle": "Facilitating Meetings",
+   "title": "The Facilitation Toolkit",
+   "url": "/effective-meetings/facilitation-toolkit",
+   "pdf": "/effective-meetings/pdf/facilitation-toolkit.pdf",
+   "summary": "Simple facilitation tools for everyday meetings, grouped by the zones of the Diamond Model: business as usual, divergent zone, groan zone, convergent zone and closure.",
+   "tags": [
+    "Facilitation",
+    "Meetings"
+   ],
+   "readingTime": 9,
+   "concepts": [
+    {
+     "name": "Setting expectations",
+     "id": "setting-expectations"
+    },
+    {
+     "name": "Agenda",
+     "id": "agenda"
+    },
+    {
+     "name": "Roles",
+     "id": "roles"
+    },
+    {
+     "name": "Timeboxing",
+     "id": "timeboxing"
+    },
+    {
+     "name": "Check-in",
+     "id": "check-in"
+    },
+    {
+     "name": "Agreeing the decision rule",
+     "id": "agreeing-the-decision-rule"
+    },
+    {
+     "name": "Brainstorming",
+     "id": "brainstorming"
+    },
+    {
+     "name": "Brainwriting",
+     "id": "brainwriting"
+    },
+    {
+     "name": "1-2-4-all",
+     "id": "1-2-4-all"
+    },
+    {
+     "name": "Round robin",
+     "id": "round-robin"
+    },
+    {
+     "name": "Small groups",
+     "id": "small-groups"
+    },
+    {
+     "name": "Mind mapping",
+     "id": "mind-mapping"
+    },
+    {
+     "name": "Paraphrasing",
+     "id": "paraphrasing"
+    },
+    {
+     "name": "Drawing people out",
+     "id": "drawing-people-out"
+    },
+    {
+     "name": "Legitimising differences",
+     "id": "legitimising-differences"
+    },
+    {
+     "name": "Circular questions",
+     "id": "circular-questions"
+    },
+    {
+     "name": "Perfection game",
+     "id": "perfection-game"
+    },
+    {
+     "name": "Ritual dissent",
+     "id": "ritual-dissent"
+    },
+    {
+     "name": "Clustering",
+     "id": "clustering"
+    },
+    {
+     "name": "Dot voting",
+     "id": "dot-voting"
+    },
+    {
+     "name": "Criteria matrix",
+     "id": "criteria-matrix"
+    },
+    {
+     "name": "Gradients of agreement",
+     "id": "gradients-of-agreement"
+    },
+    {
+     "name": "Bridging questions",
+     "id": "bridging-questions"
+    },
+    {
+     "name": "Parking lot",
+     "id": "the-parking-lot"
+    },
+    {
+     "name": "Fist to five",
+     "id": "fist-to-five"
+    },
+    {
+     "name": "Consent",
+     "id": "consent"
+    },
+    {
+     "name": "Decider protocol",
+     "id": "decider-protocol"
+    },
+    {
+     "name": "ROTI (Return on Time Invested)",
+     "id": "roti-return-on-time-invested"
+    },
+    {
+     "name": "SMART actions",
+     "id": "smart-actions"
+    }
+   ],
+   "sections": [
+    {
+     "id": "what-this-resource-is-for",
+     "heading": "What this resource is for",
+     "text": "A great deal of everyday leadership work happens inside meetings, and the quality of those meetings depends on a small number of learnable choices. This resource describes simple facilitation tools and when to use them. Their value comes from consistent use, not from complexity. The tools are grouped by the zones of the Diamond Model of participatory decision-making: business as usual, the divergent zone, the groan zone, the convergent zone and closure. Each zone has a guiding question that you can ask the group as it is. Many tools work in more than one zone, so treat the grouping as a starting point, not a rule."
+    },
+    {
+     "id": "business-as-usual",
+     "heading": "Business as usual",
+     "text": "In business as usual, the group works on familiar topics and the facilitator sets the frame for the discussion. The guiding question is: “What exactly do we need to decide, and by when?” Setting expectations means being explicit, at the start of a meeting, about what kind of meeting this is and what is expected of the people in the room. This includes the meeting's goal , but also practical things: whether this is a working session or a briefing, whether disagreement is welcome or the group is finalising something already decided, how long it will run, and what a good outcome looks like. Most wasted meeting time comes from participants working with different, unstated assumptions about what kind of conversation they are in. A short framing at the start, often no more than two sentences, prevents a lot of friction later. An agenda lists the topics of a meeting in order, with the goal and the time available for each topic. A useful agenda item names the outcome, for example “Agree which features move to Q1”, not only the subject, for example “Roadmap”. Sending the agenda in advance lets people prepare, and it lets people who are not needed for a topic decide not to attend. Roles make clear who does what in the meeting. Common roles are the facilitator, who guides the process, the content owner, who is responsible for the topic or the decision, the timekeeper and the person who takes notes. When the facilitator is also the content owner, it is hard to stay neutral, so separating the two roles helps in meetings where a decision is needed. Timeboxing means assigning a fixed, visible time limit to an agenda item or a discussion, and holding to it even if the topic does not feel finished. A timebox is not a way to rush people. It makes the group prioritise early, since a group that knows it has fifteen minutes for a topic behaves differently from a group that believes it has as long as it needs. When a timebox runs out and the topic is not resolved, the honest options are to extend it deliberately and visibly, to park the remainder for a follow-up conversation, or to close it with whatever has been decided so far. A timebox should never quietly disappear, with the meeting running long without anyone naming it. A check-in is a short round at the start of a meeting in which each person says one or two sentences, for example how they arrive, what they need from the meeting or what is on their mind. It helps people to focus on the meeting, it gives everyone a voice early, and it shows the facilitator what the group needs before the work starts. Agreeing the decision rule means deciding how the group will decide before the discussion about the content begins. Options include a decision by one person after consultation, a majority vote and consent. When the rule is clear in advance, nobody can question the process after the result is known, and people can see how much influence they have."
+    },
+    {
+     "id": "divergent-zone",
+     "heading": "Divergent zone",
+     "text": "In the divergent zone, the group collects as many ideas and perspectives as possible, without judging them yet. The guiding question is: “What else?” Brainstorming is the open, spoken generation of ideas on a question, with criticism postponed until the collection is complete. It is fast and energising, but the first ideas and the most confident voices tend to shape everything that follows, so it works best in groups that already trust each other. Brainwriting asks everyone to write their ideas down silently before anyone speaks. It removes the anchoring effect of whoever speaks first, and it gives people who think better in writing than out loud a fair chance to contribute. 1-2-4-all structures a discussion in stages. Participants think alone for a minute, then pair up to compare notes, then join another pair to form a group of four, before the whole room hears a short summary from each group of four. It surfaces more ideas than moving straight to open discussion, and nobody can stay silent for the whole exercise. Round robin means giving each person a turn to speak once, in a fixed order, before opening the floor to general discussion. It stops one or two voices from dominating a conversation and gives quieter participants time to speak without having to compete for it. Small groups of three to five people work on a question in parallel and then report back to the whole group. Everyone gets more time to speak, and people often say things in a small group that they would not say in front of everyone. Groups can work on the same question to compare results, or on different parts of a problem to cover more ground. Mind mapping places the central question in the middle of a page or board and adds ideas as branches around it, with related ideas on the same branch. It shows how ideas connect, and the visible gaps between branches invite the question “What else?”."
+    },
+    {
+     "id": "groan-zone",
+     "heading": "Groan zone",
+     "text": "In the groan zone, perspectives collide and the discussion becomes uncomfortable. The facilitator helps people understand why their views differ before the group tries to agree. The guiding question is: “Where exactly do we disagree?” Paraphrasing means repeating in your own words what someone has said, then checking whether you understood it correctly. It shows the speaker that they have been heard, it slows the discussion down when it gets heated, and it often reveals that two people who seemed to disagree mean the same thing. Drawing people out means inviting someone to say more about their point with open questions such as “Can you say more about that?” or “What makes this important to you?”. It helps people who are struggling to explain a thought, and it shows the group that every contribution deserves attention. Legitimising differences means stating openly that different perspectives are valid and expected, for example “It makes sense that Sales and Engineering see this differently, because they are measured on different things.” It reduces the pressure to win the argument and turns the disagreement into information the group can use. Circular questions ask a person about the perspective of someone else, for example “How do you think Product sees this?” or “What would Operations say if they were in the room?”. They help people to step out of their own position and make the relationships between perspectives visible. The perfection game is a structured way to give feedback on an idea or proposal. Each person rates it on a scale from 1 to 10, says what they like about it, and then says what it would take to make it a 10. Because the feedback always comes with a concrete improvement, criticism becomes a contribution instead of an attack. The technique comes from the Core Protocols by Jim and Michele McCarthy. Ritual dissent tests an idea by exposing it to strong criticism in a safe, ritual form. A spokesperson presents the idea to another group and then turns their back, while the group gives only critical feedback and the spokesperson listens without replying. Because the criticism is part of a ritual and not personal, people can be more direct than usual, and the idea becomes stronger. The method was developed by Dave Snowden."
+    },
+    {
+     "id": "convergent-zone",
+     "heading": "Convergent zone",
+     "text": "In the convergent zone, the group combines, evaluates and narrows down its options. The guiding question is: “Which criteria matter most?” Clustering means grouping similar ideas or sticky notes together and giving each group a short name. It turns a long, unordered list into a few themes that the group can discuss and compare. Dot voting gives each participant a fixed number of marks, physical dots or digital votes, to place against a list of options. It quickly turns a long list into a visible order of priority, without debating every item in turn. Dot voting shows preferences; it does not replace a decision. A criteria matrix lists the options in rows and the criteria in columns, and the group rates each option against each criterion. Agreeing the criteria, and how much each one counts, before rating the options keeps the discussion focused on what matters and makes the reasoning behind the result visible. Gradients of agreement replace a yes or no with a scale that shows the level of support, from full endorsement through “I can live with it” and “I have reservations” to a block. The scale, described by Sam Kaner, shows whether a proposal has strong support or only weak acceptance before the group commits to it. Bridging questions draw together what has been said and help the group move from separate positions towards something it can share, for example “What themes do we keep coming back to?” or “Where do we already agree, even if we have not said it?”. The parking lot is a visible place, a flip chart or a shared document, for questions and topics that come up but do not belong in the current conversation. Writing them down, instead of ignoring them or following them immediately, protects the meeting's focus and still shows that the point mattered. Agree before the end of the meeting what happens to each item."
+    },
+    {
+     "id": "closure",
+     "heading": "Closure",
+     "text": "At closure, the group makes the decision explicit and agrees what happens next. The guiding question is: “Who does what, by when?” Fist to five is a fast way to check the level of support for a decision before finalising it. Each person shows zero to five fingers, from no support at all to full support, and the facilitator can see at a glance whether the group agrees or whether a few low scores need to be discussed before moving on. It works well as the closing gesture for consent-based decisions . Consent means that a proposal is accepted when nobody has a reasoned objection to it. The question is not “Is this the best option?” but “Can you live with this and support it, even if it is not your first choice?”. Consent lets a group move forward without requiring everyone to agree completely, and objections are treated as information to improve the proposal. The decider protocol is a fast way to decide on a proposal. The proposer states the proposal, and everyone votes at the same time with yes, no or support. If only a few people vote no, the proposer asks each of them what it would take for them to vote yes, and can change the proposal. The protocol also comes from the Core Protocols by Jim and Michele McCarthy. ROTI (Return on Time Invested) is a one-minute closing practice for any meeting. Each participant rates the meeting on a scale from one to five: 1 is a waste of time, 2 is not worth it, 3 is okay but could have been better, 4 is a good use of time, and 5 is excellent. Participants can hold up fingers, write a number on a sticky note or respond in the chat. The facilitator then asks briefly what would have made a 4 a 5, or what made a low score low. ROTI is fast, it shows patterns over time, and it gives quieter participants a low-pressure way to signal a problem with the meeting itself. SMART actions are agreed actions that are specific, measurable, achievable, relevant and time-bound, each with one named owner. Writing actions in this form at the end of a meeting makes it clear who does what by when, and it makes follow-up in the next meeting easy."
+    },
+    {
+     "id": "further-reading",
+     "heading": "Further reading",
+     "text": "Lipmanowicz, H. and McCandless, K.: The Surprising Power of Liberating Structures. The source of 1-2-4-all and many other simple formats for structuring participation. Kaner, S., Lind, L., Toldi, C., Fisk, S., and Berger, D.: Facilitator's Guide to Participatory Decision-Making. The source of the Diamond Model, gradients of agreement and many of the groan zone techniques. McCarthy, J. and McCarthy, M.: Software for Your Head. Describes the Core Protocols, including the perfection game and the decider protocol."
+    }
+   ]
+  },
+  {
+   "collection": "effective-meetings",
+   "collectionTitle": "Designing and Facilitating Meetings That Move Work Forward",
+   "number": "03",
+   "module": 2,
+   "moduleTitle": "Facilitating Meetings",
+   "title": "Running an Efficient Meeting",
+   "url": "/effective-meetings/running-an-efficient-meeting",
+   "pdf": "/effective-meetings/pdf/running-an-efficient-meeting.pdf",
+   "summary": "Five practical adjustments for meetings that already have the right goal, people and format, but still run long and leave people frustrated.",
+   "tags": [
+    "Meetings",
+    "Facilitation"
+   ],
+   "readingTime": 1,
+   "concepts": [
+    {
+     "name": "Separating facilitator and content owner",
+     "id": "separating-the-facilitator-from-the-content-owner"
+    },
+    {
+     "name": "Closing recap",
+     "id": "closing-with-a-short-explicit-recap"
+    }
+   ],
+   "sections": [
+    {
+     "id": "what-this-resource-is-for",
+     "heading": "What this resource is for",
+     "text": "A meeting can already have the right goal, the right people, and the right format, and still run long and leave everyone frustrated. When that happens, the problem is usually in how the meeting is run rather than in what it is meant to achieve. Five practical adjustments help."
+    },
+    {
+     "id": "five-practical-adjustments",
+     "heading": "Five practical adjustments",
+     "text": "Separating the facilitator from the content owner keeps the clock protected. When the same person is presenting the material and also managing the discussion and the time, timekeeping is usually the first thing to slip. Agreeing the decision criteria before the meeting , rather than during it, stops a Decide meeting turning into a debate about what \"good enough\" looks like. If the group agrees the standard in advance, the meeting itself can focus on applying it to the options in front of them. Unclear decision criteria are part of a missing protocol , one of the three main causes of slow decisions. Giving a recurring meeting a standing structure , the same shape every time, saves the time that would otherwise go into re-establishing the format at the start of each session. Novelty is expensive in a meeting that happens every week. Defaulting to written input before open discussion , the same principle behind brainwriting , moves the live conversation from restating positions to actually resolving disagreement, since everyone has already read what everyone else thinks. Closing with a short, explicit recap , what was decided, who owns the next step, and by when, prevents a meeting from trailing off without a clean end. A meeting that ends this way rarely needs a second meeting later just to re-establish what was agreed."
     }
    ]
   }
